@@ -14,7 +14,7 @@ header .row{
     width: 100%;
 }
 
-header .col{
+header .col#logo{
     margin-right: auto;
     padding-left: 120px;
 }
@@ -42,4 +42,34 @@ header .col-1 a:hover{
 
 header #last-col{
     margin-right: 250px;
+}
+
+header #burguer-menu{
+    width: fit-content;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    header .col img{
+        width: 20%;
+    }
+    header .col-1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header .col{
+        padding-left: 30px;
+    }
+    header .col#logo{
+        padding-left: 50px;
+    }
+    header .col img{
+        top: 15%;
+        width: 30%;
+    }
+    header .col-1{
+        display: none;
+    }
 }
