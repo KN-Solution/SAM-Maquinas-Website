@@ -9,6 +9,8 @@ header{
     position: fixed;
     font-size: 18px;
     font-family: 'Readex Pro', sans-serif;
+    z-index: 999;
+    background-color: white;
 }
 
 header .row{
@@ -46,6 +48,7 @@ header #last-col{
 }
 
 header #burguer-menu{
+    display: none;
     width: fit-content;
     cursor: pointer;
 }
@@ -62,6 +65,11 @@ main #list-menu{
     font-size: 20px;
 }
 
+main{
+    padding-top: 160px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
 main #list-menu .row{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -72,11 +80,49 @@ main #list-menu .row .fa-xmark{
     width: 20px;
     color: red;
     height: 20px;
+    cursor: pointer;
 }
 
 main #list-menu .row a{
     text-decoration: none;
     color: black;
+}
+
+main #home-swiper{
+    width: 100%;
+    height: fit-content;
+}
+
+main #home-swiper .swiper-slide{
+    background-color: gray;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #home .col{
+    padding: 50px;
+    text-align: justify;
+    flex-direction: column;
+    display: flex;
+}
+
+main #home .col p{
+    font-size: 20px;
+}
+
+main #home img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.651);
+}
+
+footer{
+    height: 150px;
+    /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
+    background-color: #dc3545;
 }
 
 @media screen and (max-width: 850px) {
@@ -85,6 +131,13 @@ main #list-menu .row a{
     }
     header .col-1{
         display: none;
+    }
+    header #burguer-menu{
+        display: block;
+    }
+    main #list-menu{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -99,11 +152,5 @@ main #list-menu .row a{
         top: 15%;
         width: 30%;
     }
-    header .col-1{
-        display: none;
-    }
-    main #list-menu{
-        display: flex;
-        flex-direction: column;
-    }
+    
 }
