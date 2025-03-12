@@ -8,6 +8,7 @@ header{
     align-items: center;
     position: fixed;
     font-size: 18px;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 header .row{
@@ -49,6 +50,35 @@ header #burguer-menu{
     cursor: pointer;
 }
 
+main #list-menu{
+    display: none;
+    position: fixed;
+    right: -71%;
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    box-shadow: -4px 0 4px rgba(0, 0, 0, 0.244);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 20px;
+}
+
+main #list-menu .row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+main #list-menu .row .fa-xmark{
+    width: 20px;
+    color: red;
+    height: 20px;
+}
+
+main #list-menu .row a{
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width: 850px) {
     header .col img{
         width: 20%;
@@ -71,5 +101,9 @@ header #burguer-menu{
     }
     header .col-1{
         display: none;
+    }
+    main #list-menu{
+        display: flex;
+        flex-direction: column;
     }
 }
