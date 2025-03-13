@@ -17,5 +17,7 @@ const homeSwiper = new Swiper("#home-swiper", {
     slidesPerView: 1,
     autoplay: {
         delay: 3000
-    }
+    },
+    loop: true,
+    simulateTouch: false
 })
