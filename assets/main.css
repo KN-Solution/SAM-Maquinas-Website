@@ -119,6 +119,20 @@ main #home img{
     box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.651);
 }
 
+main #contact img{
+    width: 70%;
+}
+
+main #contact a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main #contact .fa-solid{
+    width: 20px;
+    height: 20px;
+}
+
 footer{
     height: 150px;
     /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
