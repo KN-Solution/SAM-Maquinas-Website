@@ -119,6 +119,19 @@ main #home img{
     box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.651);
 }
 
+main #products #product-swiper{
+    width: 35%;
+    height: 360px;
+}
+
+main #products #product-swiper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 18px;
+}
+
 main #contact img{
     width: 70%;
 }

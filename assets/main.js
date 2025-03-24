@@ -21,3 +21,12 @@ const homeSwiper = new Swiper("#home-swiper", {
     loop: true,
     simulateTouch: false
 })
+
+const prodSwiper = new Swiper("#product-swiper",{
+    effect: "cards",
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 3000
+    }
+})
