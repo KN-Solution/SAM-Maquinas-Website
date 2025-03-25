@@ -23,10 +23,21 @@ const homeSwiper = new Swiper("#home-swiper", {
 })
 
 const prodSwiper = new Swiper("#product-swiper",{
-    effect: "cards",
+    effect: "coverflow",
     grabCursor: true,
+    centeredSlides: true,
     loop: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 55,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+        scale: 0.95
+    },
     autoplay: {
         delay: 3000
-    }
+    },
+    speed: 2000
 })

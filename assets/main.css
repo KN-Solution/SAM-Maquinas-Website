@@ -120,12 +120,13 @@ main #home img{
 }
 
 main #products #product-swiper{
-    width: 35%;
+    width: 100%;
     height: 360px;
 }
 
 main #products #product-swiper .swiper-slide{
     display: flex;
+    width: 33%;
     align-items: center;
     justify-content: center;
     background-color: gray;
