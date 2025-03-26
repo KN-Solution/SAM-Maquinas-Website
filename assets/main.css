@@ -1,59 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 
-header{
-    height: 160px;
+header {
+    height: 120px;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.267);
     display: flex;
+    flex-direction: column;
     align-items: center;
     position: fixed;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Readex Pro', sans-serif;
     z-index: 999;
     background-color: white;
 }
 
-header .row{
+header .row {
     width: 100%;
 }
 
-header .col#logo{
+header .row#top-header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    color: white;
+    .col{
+        text-align: center;
+    }
+}
+
+header .row#main-header{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .col#logo {
     margin-right: auto;
     padding-left: 120px;
 }
 
-header .col img{
+header .col img {
     position: absolute;
     top: 20%;
-    width: 10%;
+    width: 8%;
 }
 
-header .col-1{
+header .col-1 {
     margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 
-header .col-1 a{
+header .col-1 a {
     text-decoration: none;
     color: black;
     transition: 0.3s ease-in-out;
 }
 
-header .col-1 a:hover{
+header .col-1 a:hover {
     color: red;
     transition: 0.3s ease-in-out;
 }
 
-header #last-col{
-    margin-right: 250px;
+header #last-col {
+    margin-right: 200px;
+    .fa-whatsapp{
+        width: 20px;
+        height: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        background-color: #56db2a;
+        border: 2px solid #56db2a;
+        border-radius: 3px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    a:hover{
+        background-color: transparent;
+        color: black;
+        transition: 0.3s ease-in-out;
+    }
 }
 
-header #burguer-menu{
+header #burguer-menu {
     display: none;
     width: fit-content;
     cursor: pointer;
 }
 
-main #list-menu{
+main #list-menu {
     display: none;
     position: fixed;
     right: -71%;
@@ -65,35 +110,35 @@ main #list-menu{
     font-size: 20px;
 }
 
-main{
-    padding-top: 160px;
+main {
+    padding-top: 120px;
     font-family: 'Readex Pro', sans-serif;
 }
 
-main #list-menu .row{
+main #list-menu .row {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 15px;
 }
 
-main #list-menu .row .fa-xmark{
+main #list-menu .row .fa-xmark {
     width: 20px;
     color: red;
     height: 20px;
     cursor: pointer;
 }
 
-main #list-menu .row a{
+main #list-menu .row a {
     text-decoration: none;
     color: black;
 }
 
-main #home-swiper{
+main #home-swiper {
     width: 100%;
     height: fit-content;
 }
 
-main #home-swiper .swiper-slide{
+main #home-swiper .swiper-slide {
     background-color: gray;
     width: 100%;
     height: 300px;
@@ -102,29 +147,29 @@ main #home-swiper .swiper-slide{
     justify-content: center;
 }
 
-main #home .col{
+main #home .col {
     padding: 50px;
     text-align: justify;
     flex-direction: column;
     display: flex;
 }
 
-main #home .col p{
+main #home .col p {
     font-size: 20px;
 }
 
-main #home img{
+main #home img {
     width: 100%;
     border-radius: 5px;
     box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.651);
 }
 
-main #products #product-swiper{
+main #products #product-swiper {
     width: 100%;
     height: 360px;
 }
 
-main #products #product-swiper .swiper-slide{
+main #products #product-swiper .swiper-slide {
     display: flex;
     width: 33%;
     align-items: center;
@@ -133,52 +178,57 @@ main #products #product-swiper .swiper-slide{
     border-radius: 18px;
 }
 
-main #contact img{
+main #contact img {
     width: 70%;
 }
 
-main #contact a{
+main #contact a {
     text-decoration: none;
     font-size: 18px;
 }
 
-main #contact .fa-solid{
+main #contact .fa-solid {
     width: 20px;
     height: 20px;
 }
 
-footer{
+footer {
     height: 150px;
     /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
     background-color: #dc3545;
 }
 
 @media screen and (max-width: 850px) {
-    header .col img{
+    header .col img {
         width: 20%;
     }
-    header .col-1{
+
+    header .col-1 {
         display: none;
     }
-    header #burguer-menu{
+
+    header #burguer-menu {
         display: block;
     }
-    main #list-menu{
+
+    main #list-menu {
         display: flex;
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 720px) {
-    header .col{
+    header .col {
         padding-left: 30px;
     }
-    header .col#logo{
+
+    header .col#logo {
         padding-left: 50px;
     }
-    header .col img{
+
+    header .col img {
         top: 15%;
         width: 30%;
     }
-    
+
 }
