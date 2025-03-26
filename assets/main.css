@@ -176,6 +176,9 @@ main #products #product-swiper .swiper-slide {
     justify-content: center;
     background-color: gray;
     border-radius: 18px;
+    img{
+        width: 100%;
+    }
 }
 
 main #contact img {
