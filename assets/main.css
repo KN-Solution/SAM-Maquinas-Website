@@ -164,6 +164,35 @@ main #home img {
     box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.651);
 }
 
+main #about .row.mb-5.mt-5{
+    padding: 0 70px;
+}
+
+main #about .col .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background-color: rgba(128, 128, 128, 0.163);
+    transition: 0.3s ease-in-out;
+    padding: 10px;
+    cursor: pointer;
+    .fa-circle-dot{
+        width: 20px;
+        height: 20px;
+    }
+    p{
+        margin: 0;
+        width: fit-content;
+    }
+}
+
+main #about .col .row:hover{
+    background-color: #dc3545;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
 main #products #product-swiper {
     width: 100%;
     height: 360px;
