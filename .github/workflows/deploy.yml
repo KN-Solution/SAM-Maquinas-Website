@@ -1,0 +1,29 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  ftp-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Instalar LFTP
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy via FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: |
+          lftp -c "
+            open -u $FTP_USER,$FTP_PASS $FTP_HOST;
+            set ssl:verify-certificate no;
+            mirror -R ./ ./public_html --delete --verbose
+          "
