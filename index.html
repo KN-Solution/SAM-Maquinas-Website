@@ -36,7 +36,7 @@
         </div>
         <div id="main-header" class="row">
             <div class="col" id="logo">
-                <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/image.png" alt="">
+                <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/logo.png" alt="">
             </div>
             <div class="col-1">
                 <a href="#main">Home</a>
@@ -107,28 +107,59 @@
                 <h1>SAM - Importação de Máquinas</h1>
                 <div class="row mb-5 mt-5">
                     <div class="col">
-                        <div class="row">
+                        <div id="about-first-row" class="row menu-item active" onclick="changeContent(0, this)">
                             <i class="fa-regular fa-circle-dot"></i>
                             <p>1º Assunto</p>
                         </div>
-                        <div class="row">
+                        <div class="row menu-item" onclick="changeContent(1, this)">
                             <i class="fa-regular fa-circle-dot"></i>
                             <p>2º Assunto</p>
                         </div>
-                        <div class="row">
+                        <div class="row menu-item" onclick="changeContent(2, this)">
                             <i class="fa-regular fa-circle-dot"></i>
                             <p>3º Assunto</p>
                         </div>
-                        <div class="row">
+                        <div class="row menu-item" onclick="changeContent(3, this)">
                             <i class="fa-regular fa-circle-dot"></i>
                             <p>4º Assunto</p>
                         </div>
-                        <div class="row">
+                        <div id="about-last-row" class="row menu-item" onclick="changeContent(4, this)">
                             <i class="fa-regular fa-circle-dot"></i>
                             <p>5º Assunto</p>
                         </div>
                     </div>
-                    <div class="col"></div>
+                    <div class="col" style="padding: 0;">
+                        <div class="content active">
+                            <h1>Conteudo 1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus
+                                voluptates! Quod, cumque. Quisquam, voluptatibus voluptates! Quod, cumque. Quisquam,
+                                voluptatibus voluptates! Quod, cumque.</p>
+                        </div>
+                        <div class="content">
+                            <h1>Conteudo 2</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus
+                                voluptates! Quod, cumque. Quisquam, voluptatibus voluptates! Quod, cumque. Quisquam,
+                                voluptatibus voluptates! Quod, cumque.</p>
+                        </div>
+                        <div class="content">
+                            <h1>Conteudo 3</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus
+                                voluptates! Quod, cumque. Quisquam, voluptatibus voluptates! Quod, cumque. Quisquam,
+                                voluptatibus voluptates! Quod, cumque.</p>
+                        </div>
+                        <div class="content">
+                            <h1>Conteudo 4</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus
+                                voluptates! Quod, cumque. Quisquam, voluptatibus voluptates! Quod, cumque. Quisquam,
+                                voluptatibus voluptates! Quod, cumque.</p>
+                        </div>
+                        <div class="content">
+                            <h1>Conteudo 5</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus
+                                voluptates! Quod, cumque. Quisquam, voluptatibus voluptates! Quod, cumque. Quisquam,
+                                voluptatibus voluptates! Quod, cumque.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="text-center" id="products">
@@ -138,22 +169,25 @@
                         <div class="swiper" id="product-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/3015epro.jpeg" alt="">
+                                    <img src="assets/imgs/3015epro.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/3015lnr.jpg" alt="">
+                                    <img src="assets/imgs/3015lnr.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/Curvadeira-Tubos.jpg" alt="">
+                                    <img src="assets/imgs/curvadeira-de-tubos.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/Empilhadeiras.jpg" alt="">
+                                    <img src="assets/imgs/dobradeira.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/Marking.jpg" alt="">
+                                    <img src="assets/imgs/empilhadeira.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/Serra.jpg" alt="">
+                                    <img src="assets/imgs/marking.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/imgs/serra.png" alt="">
                                 </div>
                             </div>
                         </div>

@@ -43,8 +43,8 @@ header .col#logo {
 
 header .col img {
     position: absolute;
-    top: 20%;
-    width: 8%;
+    top: 30%;
+    width: 15%;
 }
 
 header .col-1 {
@@ -139,7 +139,7 @@ main #home-swiper {
 }
 
 main #home-swiper .swiper-slide {
-    background-color: gray;
+    background-color: transparent;
     width: 100%;
     height: 300px;
     display: flex;
@@ -184,12 +184,38 @@ main #about .col .row{
     p{
         margin: 0;
         width: fit-content;
+        font-size: 18px;
     }
 }
 
-main #about .col .row:hover{
+#about-first-row{
+    border-top-left-radius: 10px;
+}
+
+#about-last-row{
+    border-bottom-left-radius: 10px;
+}
+
+main #about .col .row:hover, main #about .col .row.active{
     background-color: #dc3545;
     color: white;
+    transition: 0.3s ease-in-out;
+}
+
+main #about .col .content{
+    display: none;
+    text-align: justify;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.163);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+}
+
+main #about .col .content.active{
+    display: block;
+    opacity: 100%;
     transition: 0.3s ease-in-out;
 }
 
@@ -203,7 +229,7 @@ main #products #product-swiper .swiper-slide {
     width: 33%;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background-color: transparent;
     border-radius: 18px;
     img{
         width: 100%;

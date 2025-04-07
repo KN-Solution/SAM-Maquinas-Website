@@ -41,3 +41,30 @@ const prodSwiper = new Swiper("#product-swiper",{
     },
     speed: 2000
 })
+
+function changeContent(contentID, menu){
+    const contentList = document.querySelectorAll('.content');
+    const menuList = document.querySelectorAll('.menu-item');
+    menuList.forEach((menu) => {
+            menu.classList.remove('active')
+    })
+    menu.classList.add('active');
+    gsap.to(contentList, {
+        duration: 0.5,
+        opacity: 0,
+        onComplete: () => {
+            contentList.forEach((content) => {
+                content.style.display = 'none'
+                content.classList.remove('active')
+            })
+            gsap.to(contentList[contentID], {
+                display: 'block',
+                duration: 0.5,
+                opacity: 1,
+                onComplete: () => {
+                    contentList[contentID].classList.add('active')
+                }
+            })
+        }
+    })
+}
