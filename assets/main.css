@@ -43,8 +43,8 @@ header .col#logo {
 
 header .col img {
     position: absolute;
-    top: 30%;
-    width: 15%;
+    top: 35%;
+    width: 12%;
 }
 
 header .col-1 {
@@ -60,7 +60,7 @@ header .col-1 a {
 }
 
 header .col-1 a:hover {
-    color: red;
+    color: rgb(1, 149, 149);
     transition: 0.3s ease-in-out;
 }
 
@@ -161,7 +161,7 @@ main #home .col p {
 main #home img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.651);
+    box-shadow: 1px 2px 8px gray;
 }
 
 main #about .row.mb-5.mt-5{
