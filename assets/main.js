@@ -1,14 +1,26 @@
+var menuOpen = false;
+
 function openMenu(){
+    if(menuOpen) {
+        closeMenu();
+        return;
+    }
     gsap.to('#list-menu',{
         duration: 0.3,
-        x: '-85%'
+        x: '-85%',
+        onComplete: () => {
+            menuOpen = true;
+        }
     })
 }
 
 function closeMenu(){
     gsap.to('#list-menu',{
         duration: 0.3,
-        x: '0%'
+        x: '0%',
+        onComplete: () => {
+            menuOpen = false;
+        }
     })
 }
 
