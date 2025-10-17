@@ -147,6 +147,12 @@ main #home-swiper .swiper-slide {
     justify-content: center;
 }
 
+main #home-swiper .swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 main #home .col {
     padding: 50px;
     text-align: justify;
