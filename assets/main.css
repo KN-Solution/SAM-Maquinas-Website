@@ -18,19 +18,20 @@ header .row {
     width: 100%;
 }
 
-header .row#top-header{
+header .row#top-header {
     width: 100%;
     height: 60px;
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     color: white;
-    .col{
+
+    .col {
         text-align: center;
     }
 }
 
-header .row#main-header{
+header .row#main-header {
     display: flex;
     align-items: center;
     height: 100%;
@@ -66,10 +67,12 @@ header .col-1 a:hover {
 
 header #last-col {
     margin-right: 150px;
-    .fa-whatsapp{
+
+    .fa-whatsapp {
         width: 20px;
         height: 20px;
     }
+
     a {
         text-decoration: none;
         color: rgb(255, 255, 255);
@@ -85,7 +88,8 @@ header #last-col {
         align-items: center;
         justify-content: center;
     }
-    a:hover{
+
+    a:hover {
         background-color: transparent;
         color: black;
         transition: 0.3s ease-in-out;
@@ -96,6 +100,38 @@ header #burguer-menu {
     display: none;
     width: fit-content;
     cursor: pointer;
+}
+
+#list-menu #whatsapp-contact {
+    margin: 10px;
+    width: 100%;
+}
+
+#list-menu #whatsapp-contact .fa-whatsapp {
+    width: 20px;
+    height: 20px;
+}
+
+#list-menu #whatsapp-contact a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    background-color: #56db2a;
+    border: 2px solid #56db2a;
+    border-radius: 3px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+#list-menu #whatsapp-contact a:hover {
+    background-color: transparent;
+    color: black;
+    transition: 0.3s ease-in-out;
 }
 
 main #list-menu {
@@ -170,11 +206,11 @@ main #home img {
     box-shadow: 1px 2px 8px gray;
 }
 
-main #about .row.mb-5.mt-5{
+main #about .row.mb-5.mt-5 {
     padding: 0 70px;
 }
 
-main #about .col .row{
+main #about .col .row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -183,32 +219,35 @@ main #about .col .row{
     transition: 0.3s ease-in-out;
     padding: 10px;
     cursor: pointer;
-    .fa-circle-dot{
+
+    .fa-circle-dot {
         width: 20px;
         height: 20px;
     }
-    p{
+
+    p {
         margin: 0;
         width: fit-content;
         font-size: 18px;
     }
 }
 
-#about-first-row{
+#about-first-row {
     border-top-left-radius: 10px;
 }
 
-#about-last-row{
+#about-last-row {
     border-bottom-left-radius: 10px;
 }
 
-main #about .col .row:hover, main #about .col .row.active{
+main #about .col .row:hover,
+main #about .col .row.active {
     background-color: #dc3545;
     color: white;
     transition: 0.3s ease-in-out;
 }
 
-main #about .col .content{
+main #about .col .content {
     display: none;
     text-align: justify;
     height: 100%;
@@ -219,7 +258,7 @@ main #about .col .content{
     opacity: 0;
 }
 
-main #about .col .content.active{
+main #about .col .content.active {
     display: block;
     opacity: 100%;
     transition: 0.3s ease-in-out;
@@ -237,7 +276,8 @@ main #products #product-swiper .swiper-slide {
     justify-content: center;
     background-color: transparent;
     border-radius: 18px;
-    img{
+
+    img {
         width: 100%;
     }
 }
@@ -256,6 +296,10 @@ main #contact .fa-solid {
     height: 20px;
 }
 
+main #home-mobile {
+    display: none;
+}
+
 footer {
     height: 150px;
     /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
@@ -264,11 +308,11 @@ footer {
 
 @media screen and (max-width: 850px) {
 
-    header{
+    header {
         height: 100px !important;
     }
 
-    header #logo{
+    header #logo {
         padding-left: 0 !important;
         margin-right: 0 !important;
         display: flex;
@@ -279,19 +323,17 @@ footer {
         width: 45% !important;
     }
 
-    #top-header{
+    #top-header {
         display: none !important;
     }
 
-    #main-header{
+    #main-header {
         z-index: 1000;
         height: 100px !important;
     }
 
-    header #last-col{
-        margin-right: 0 !important;
-        flex: 1 !important;
-        padding: 0 !important;
+    header #last-col {
+        display: none;
     }
 
     header .col-1 {
@@ -316,6 +358,44 @@ footer {
         flex-direction: column;
         z-index: 900;
     }
+
+    main #home-mobile {
+        display: flex;
+        background-image: url(./imgs/banner-1-mobile.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 75vh;
+    }
+
+    main #home .text-center {
+        display: none;
+    }
+
+    main #home .col{
+        text-align: left;
+    }
+
+    #main #home .col h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    main #home .col button{
+        width: 100% !important;
+    }
+
+    #mid-banner{
+        background-image: url(./imgs/banner-2-mobile.jpeg) !important;
+        height: 90vh !important;
+        width: 105vw !important;
+        background-size: 105% !important;
+    }
+
+    .swiper {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 720px) {
