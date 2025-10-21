@@ -121,7 +121,7 @@
             <section class="text-center" id="about">
                 <div class="col mb-4" id="mid-banner" style="background-image: url(./assets/imgs/banner-2-desktop.jpg); background-repeat: no-repeat; background-size: cover; width: 99vw; height: 100vh; margin-left: -7.3vw;"></div>
                 <h1>SAM - Importação de Máquinas</h1>
-                <div class="row mb-5 mt-5">
+                <div class="row mb-5 mt-5" id="about-container">
                     <div class="col">
                         <div id="about-first-row" class="row menu-item active" onclick="changeContent(0, this)">
                             <i class="fa-regular fa-circle-dot"></i>
@@ -196,8 +196,8 @@
                 </div>
             </section>
             <section class="text-center" id="products">
-                <h1>Conheça nossas máquinas</h1>
-                <div class="row mt-5 mb-5">
+                <h1>Conheça algumas de nossas máquinas</h1>
+                <div class="row mt-5 mb-5" id="products-container">
                     <div class="col">
                         <div class="card" style="height: 510px;">
                             <div class="card-body" style="display: flex;">
@@ -386,9 +386,9 @@
                 </div>
             </section>
             <section id="contact" class="mb-5 mt-5">
-                <div class="row">
+                <div class="row" id="contact-desktop">
                     <div class="col">
-                        <h1 class="text-danger">SAM Comércio de Máquinas LTDA.</h1>
+                        <h1>SAM Comércio de Máquinas LTDA.</h1>
                         <img src="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/office.png"
                             alt="">
                     </div>
@@ -404,7 +404,7 @@
                     <div class="col">
                         <h3 class="mb-5">Contato</h3>
                         <div class="row mb-2">
-                            <a class="text-danger"
+                            <a class="text-primary"
                                 href="https://wa.me/5547991272705&text=Olá,%20entrei%20em%20contato%20pelo%20seu%20site!%20Gostaria%20de%20receber%20mais%20detalhes."
                                 target="_blank">
                                 <i class="fa-solid fa-phone"></i>
@@ -412,17 +412,52 @@
                             </a>
                         </div>
                         <div class="row mb-2">
-                            <a href="" class="text-danger">
+                            <a href="" class="text-primary">
                                 <i class="fa-solid fa-envelope"></i>
                                 contato@sammaquinas.com.br
                             </a>
                         </div>
                         <div class="row mb-2">
-                            <a href="" class="text-danger">
+                            <a href="" class="text-primary">
                                 <i class="fa-solid fa-globe"></i>
                                 www.sammaquinas.com.br
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div class="row" id="contact-mobile">
+                    <div class="row text-center mb-3">
+                        <h3>Contato</h3>
+                    </div>
+                    <div class="row mb-2">
+                        <a class="text-primary"
+                            href="https://wa.me/5547991272705&text=Olá,%20entrei%20em%20contato%20pelo%20seu%20site!%20Gostaria%20de%20receber%20mais%20detalhes."
+                            target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            +55 (47) 99127-2705
+                        </a>
+                    </div>
+                    <div class="row mb-2">
+                        <a href="" class="text-primary">
+                            <i class="fa-solid fa-envelope"></i>
+                            contato@sammaquinas.com.br
+                        </a>
+                    </div>
+                    <div class="row mb-3">
+                        <a href="" class="text-primary">
+                            <i class="fa-solid fa-globe"></i>
+                            www.sammaquinas.com.br
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="" class="text-primary" style="align-items: flex-start; font-size: medium;">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Rua Ervino Niebuhr, 271 - Sala 01, Nova Brasilia, BRUSQUE/SC - 88352-550
+                        </a>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4224.518391600788!2d-48.89459150415263!3d-27.081236878153565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df47a9c979e761%3A0xddce173dddf81477!2zU0FNIENvbcOpcmNpbyBlIEltcG9ydGHDp8OjbyBMVERB!5e0!3m2!1spt-BR!2sbr!4v1749556499832!5m2!1spt-BR!2sbr"
+                            width="90%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>
@@ -430,7 +465,11 @@
     </main>
     <footer>
         <div class="row">
-
+            
+        </div>
+        <div class="col text-center" id="mobile-footer">
+            
+            <p>© 2024 SAM Comércio de Máquinas LTDA. Todos os direitos reservados.</p>
         </div>
     </footer>
 
