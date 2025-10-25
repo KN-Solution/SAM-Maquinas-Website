@@ -305,15 +305,16 @@ main #home-mobile {
 }
 
 footer {
+    font-family: 'Readex Pro', sans-serif;
     height: 150px;
     /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
     background-color: #076efe;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) and (min-width: 721px) {
 
     header {
-        height: 150px !important;
+        height: 150px;
     }
 
     header #logo {
@@ -334,7 +335,7 @@ footer {
 
     #main-header {
         z-index: 1000;
-        height: 100px !important;
+        height: 100px;
     }
 
     header #last-col {
@@ -347,7 +348,6 @@ footer {
 
     header #burguer-menu {
         display: block;
-        margin-top: 45px;
     }
 
     #burguer-menu .fa-bars {
@@ -356,7 +356,7 @@ footer {
     }
 
     main {
-        padding-top: 150px !important;
+        padding-top: 150px;
     }
 
     main #list-menu {
@@ -382,7 +382,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 82vh;
+        height: 110vh;
     }
 
     main #home .text-center {
@@ -399,7 +399,7 @@ footer {
     }
 
     main #home .col p{
-        font-size: 40px;
+        font-size: 25px;
     }
 
     main #home .col button{
@@ -460,6 +460,44 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
+
+    header{
+        height: 100px;
+    }
+
+    #top-header {
+        display: none !important;
+    }
+
+    header #last-col {
+        display: none;
+    }
+
+    header .col-1 {
+        display: none;
+    }
+
+    header #burguer-menu {
+        display: block;
+    }
+
+    main{
+        padding-top: 100px;
+    }
+
+    main #home .text-center {
+        display: none;
+    }
+
+    header #burguer-menu{
+        margin-top: 0px;
+    }
+
+    header #burguer-menu .fa-bars{
+        width: 30px;
+        height: 30px;
+    }
+
     header .col {
         padding-left: 30px;
     }
@@ -473,9 +511,17 @@ footer {
         width: 50%;
     }
 
+    #home-swiper{
+        display: none;
+    }
+
     #home-mobile{
+        display: flex !important;
+        background-image: url(./imgs/banner-1-mobile.jpeg);
+        background-repeat: no-repeat;
         background-size: 105% !important;
-        
+        width: 100%;
+        height: 80vh;
     }
 
     #mid-banner{
@@ -485,7 +531,45 @@ footer {
         background-size: 102% !important;
     }
 
+    main #home .col h1{
+        font-size: 40px !important;
+    }
+
+    main #home .col p{
+        font-size: 20px !important;
+    }
+
+    main #home .col button{
+        width: 100% !important;
+    }
+
+    #about-container, #products-container{
+        display: none;
+    }
+
+    main #home .col button h3{
+        font-size: 25px !important;
+    }
+
+    #contact-desktop{
+        display: none;
+    }
+
+    #contact-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact-mobile h3{
+        font-size: xx-large;
+    }
+
     #contact-mobile .row a {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
         font-size: 20px;
     }
 
@@ -493,5 +577,6 @@ footer {
         width: 25px;
         height: 25px;
         margin-right: 10px;
-    }   
+    } 
+
 }
