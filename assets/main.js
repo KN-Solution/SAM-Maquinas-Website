@@ -54,6 +54,20 @@ const prodSwiper = new Swiper("#product-swiper",{
     speed: 2000
 })
 
+const aboutSwiper = new Swiper('#about-swiper',{
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    autoplay: {
+        delay: 8000
+    },
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+})
+
 function changeContent(contentID, menu){
     const contentList = document.querySelectorAll('.content');
     const menuList = document.querySelectorAll('.menu-item');

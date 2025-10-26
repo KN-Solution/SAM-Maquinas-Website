@@ -282,6 +282,23 @@ main #products #product-swiper .swiper-slide {
     }
 }
 
+.swiper#about-swiper {
+    display: none;
+}
+
+.swiper#about-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+    height: 60vh;
+    border: 1px solid rgba(128, 128, 128, 0.701);
+    border-radius: 15px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: inset 1px 2px 8px gray;
+}
+
 main #contact img {
     width: 70%;
 }
@@ -296,7 +313,7 @@ main #contact .fa-solid {
     height: 20px;
 }
 
-#contact-mobile{
+#contact-mobile {
     display: none;
 }
 
@@ -366,14 +383,14 @@ footer {
         font-size: 40px;
     }
 
-    main #list-menu .row .fa-xmark{
+    main #list-menu .row .fa-xmark {
         width: 50px;
         height: 50px;
     }
 
     main #list-menu .fa-whatsapp {
         width: 40px !important;
-        height: 40px !important; 
+        height: 40px !important;
     }
 
     main #home-mobile {
@@ -389,28 +406,28 @@ footer {
         display: none;
     }
 
-    main #home .col{
+    main #home .col {
         text-align: left;
     }
 
-    #main #home .col h1{
+    #main #home .col h1 {
         font-size: 52px;
         font-weight: bold;
     }
 
-    main #home .col p{
+    main #home .col p {
         font-size: 25px;
     }
 
-    main #home .col button{
+    main #home .col button {
         width: 100% !important;
     }
 
-    main #home .col button h3{
+    main #home .col button h3 {
         font-size: 40px;
     }
 
-    #mid-banner{
+    #mid-banner {
         background-image: url(./imgs/banner-2-mobile.jpeg) !important;
         height: 85vh !important;
         width: 102.6vw !important;
@@ -421,26 +438,26 @@ footer {
         display: none;
     }
 
-    #about-container{
+    #about-container {
         display: none;
     }
 
-    #products-container{
+    #products-container {
         display: none;
     }
 
-    #contact-desktop{
+    #contact-desktop {
         display: none;
     }
 
-    #contact-mobile{
+    #contact-mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #contact-mobile h3{
+    #contact-mobile h3 {
         font-size: xx-large;
     }
 
@@ -451,7 +468,10 @@ footer {
         font-size: 30px;
     }
 
-    #contact-mobile .fa-whatsapp, #contact-mobile .fa-envelope, #contact-mobile .fa-globe, #contact-mobile .fa-location-dot{
+    #contact-mobile .fa-whatsapp,
+    #contact-mobile .fa-envelope,
+    #contact-mobile .fa-globe,
+    #contact-mobile .fa-location-dot {
         width: 40px;
         height: 40px;
         margin-right: 10px;
@@ -461,7 +481,7 @@ footer {
 
 @media screen and (max-width: 720px) {
 
-    header{
+    header {
         height: 100px;
     }
 
@@ -481,7 +501,7 @@ footer {
         display: block;
     }
 
-    main{
+    main {
         padding-top: 100px;
     }
 
@@ -489,11 +509,11 @@ footer {
         display: none;
     }
 
-    header #burguer-menu{
+    header #burguer-menu {
         margin-top: 0px;
     }
 
-    header #burguer-menu .fa-bars{
+    header #burguer-menu .fa-bars {
         width: 30px;
         height: 30px;
     }
@@ -511,11 +531,11 @@ footer {
         width: 50%;
     }
 
-    #home-swiper{
+    #home-swiper {
         display: none;
     }
 
-    #home-mobile{
+    #home-mobile {
         display: flex !important;
         background-image: url(./imgs/banner-1-mobile.jpeg);
         background-repeat: no-repeat;
@@ -524,45 +544,46 @@ footer {
         height: 80vh;
     }
 
-    #mid-banner{
+    #mid-banner {
         background-image: url(./imgs/banner-2-mobile.jpeg) !important;
         height: 80vh !important;
         width: 104vw !important;
         background-size: 102% !important;
     }
 
-    main #home .col h1{
+    main #home .col h1 {
         font-size: 40px !important;
     }
 
-    main #home .col p{
+    main #home .col p {
         font-size: 20px !important;
     }
 
-    main #home .col button{
+    main #home .col button {
         width: 100% !important;
     }
 
-    #about-container, #products-container{
+    #about-container,
+    #products-container {
         display: none;
     }
 
-    main #home .col button h3{
+    main #home .col button h3 {
         font-size: 25px !important;
     }
 
-    #contact-desktop{
+    #contact-desktop {
         display: none;
     }
 
-    #contact-mobile{
+    #contact-mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #contact-mobile h3{
+    #contact-mobile h3 {
         font-size: xx-large;
     }
 
@@ -573,10 +594,17 @@ footer {
         font-size: 20px;
     }
 
-    #contact-mobile .fa-whatsapp, #contact-mobile .fa-envelope, #contact-mobile .fa-globe, #contact-mobile .fa-location-dot{
+    #contact-mobile .fa-whatsapp,
+    #contact-mobile .fa-envelope,
+    #contact-mobile .fa-globe,
+    #contact-mobile .fa-location-dot {
         width: 25px;
         height: 25px;
         margin-right: 10px;
-    } 
+    }
+
+    .swiper#about-swiper {
+        display: flex;
+    }
 
 }
