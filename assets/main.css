@@ -365,6 +365,7 @@ footer {
 
     header #burguer-menu {
         display: block;
+        z-index: 9999;
     }
 
     #burguer-menu .fa-bars {
@@ -483,6 +484,7 @@ footer {
 
     header {
         height: 100px;
+        z-index: 1000;
     }
 
     #top-header {
@@ -499,10 +501,12 @@ footer {
 
     header #burguer-menu {
         display: block;
+        z-index: 9999;
     }
 
     main {
         padding-top: 100px;
+        z-index: 500;
     }
 
     main #home .text-center {
@@ -511,11 +515,18 @@ footer {
 
     header #burguer-menu {
         margin-top: 0px;
+        z-index: 9999;
     }
 
     header #burguer-menu .fa-bars {
         width: 30px;
         height: 30px;
+    }
+
+    main #list-menu {
+        display: flex;
+        flex-direction: column;
+        z-index: 900;
     }
 
     header .col {
