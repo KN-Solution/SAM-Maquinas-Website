@@ -177,16 +177,16 @@ main #home-swiper {
 main #home-swiper .swiper-slide {
     background-color: transparent;
     width: 100%;
-    height: 300px;
+    height: 81vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 main #home-swiper .swiper-slide img {
+    height: 100%;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 main #home .col {
@@ -280,6 +280,10 @@ main #products #product-swiper .swiper-slide {
     img {
         width: 100%;
     }
+}
+
+#products-mobile{
+    display: none;
 }
 
 .swiper#about-swiper {
@@ -445,6 +449,10 @@ footer {
 
     #products-container {
         display: none;
+    }
+
+    #products-mobile{
+        display: flex;
     }
 
     #contact-desktop {
@@ -618,4 +626,97 @@ footer {
         display: flex;
     }
 
+}
+
+/* ===== MOBILE E TABLET ===== */
+
+@media (max-width: 768px) {
+
+    /* Header geral */
+    #top-header {
+        display: none !important;
+    }
+
+    #main-header {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Logo */
+    #logo {
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    #logo img {
+        position: static !important;
+        width: 45% !important;
+        margin: 0 auto;
+    }
+
+    /* Oculta navegação desktop */
+    #main-header .col-1,
+    #last-col {
+        display: none !important;
+    }
+
+    /* Mostra botão hambúrguer */
+    #burguer-menu {
+        display: block !important;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* GRID dos produtos */
+    .col-md-3 {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+    }
+
+    .produto-card {
+        height: 230px !important;
+        padding: 12px !important;
+    }
+
+    .produto-card img {
+        max-height: 120px !important;
+    }
+
+    .produto-card h5 {
+        font-size: 16px !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* GRID vira 1 por linha */
+    .col-md-3 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    .produto-card {
+        height: 200px !important;
+    }
+
+    .produto-card img {
+        max-height: 150px !important;
+    }
+
+    /* Logo menor ainda */
+    #logo img {
+        width: 55% !important;
+    }
+
+    #burguer-menu {
+        font-size: 26px !important;
+    }
 }
