@@ -89,3 +89,45 @@ function changeContent(contentID, menu) {
         }
     })
 }
+
+function animCursor(el, enter) {
+    if (enter) {
+        gsap.to(el, {
+            duration: 0.5,
+            x: -25,
+            y: -30,
+            rotate: -25,
+            onComplete: () => {
+                gsap.to(el, {
+                    duration: 0.1,
+                    scale: 0.85,
+                    onComplete: () => {
+                        gsap.to(el, {
+                            duration: 0.1,
+                            scale: 1,
+                            onComplete: () => {
+                                gsap.to(el, {
+                                    duration: 0.1,
+                                    scale: 0.85,
+                                    onComplete: () => {
+                                        gsap.to(el, {
+                                            duration: 0.1,
+                                            scale: 1,
+                                        })
+                                    }
+                                })
+                            }
+                        })
+                    }
+                })
+             }
+        })
+    } else {
+        gsap.to(el, {
+            duration: 0.5,
+            x: 0,
+            y: 0,
+            rotate: 0
+        })
+    }
+}

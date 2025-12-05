@@ -192,7 +192,7 @@ main #home-swiper .swiper-slide img {
     z-index: 0;
 }
 
-main #home-swiper .swiper-slide h1{
+main #home-swiper .swiper-slide h1 {
     z-index: 1000;
     color: white;
 }
@@ -218,6 +218,14 @@ main #about .row.mb-5.mt-5 {
     padding: 0 70px;
 }
 
+main #about .col {
+    height: 75vh;
+}
+
+main #about .col .menu-item {
+    height: 15vh;
+}
+
 main #about .col .row {
     display: flex;
     flex-direction: row;
@@ -240,17 +248,31 @@ main #about .col .row {
     }
 }
 
-#about-first-row {
-    border-top-left-radius: 10px;
+#about-option{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    border: 1px solid #3098cd;
+    background-color: white;
+    color: #3098cd;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-#about-last-row {
-    border-bottom-left-radius: 10px;
+#about-option h1{
+    text-align: left;
+}
+
+#about-option:hover{
+    background-color: #3098cd;
+    color: white;
+    transition: 0.3s ease-in-out;
 }
 
 main #about .col .row:hover,
 main #about .col .row.active {
-    background-color: #dc3545;
+    background-color: #3098cd;
     color: white;
     transition: 0.3s ease-in-out;
 }
@@ -261,8 +283,6 @@ main #about .col .content {
     height: 100%;
     padding: 10px;
     background-color: rgba(128, 128, 128, 0.163);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     opacity: 0;
 }
 
@@ -290,11 +310,11 @@ main #products #product-swiper .swiper-slide {
     }
 }
 
-main #products-container #all-laser-machines .card{
+main #products-container #all-laser-machines .card {
     cursor: pointer;
 }
 
-#products-mobile{
+#products-mobile {
     display: none;
 }
 
@@ -329,6 +349,15 @@ main #contact .fa-solid {
     height: 20px;
 }
 
+#contact-desktop .fa-whatsapp,
+#contact-desktop .fa-envelope,
+#contact-desktop .fa-globe,
+#contact-desktop .fa-location-dot {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
 #contact-mobile {
     display: none;
 }
@@ -341,16 +370,19 @@ footer {
     font-family: 'Readex Pro', sans-serif;
     height: 230px;
     /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
-    background-color: #076efe;
+    background-color: #3098cd;
 }
 
-footer a{
+footer a,
+footer h5,
+footer p,
+footer .col {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-footer a:hover{
-    color: rgb(204, 204, 204);
+footer a:hover {
+    color: white;
     transition: 0.3s ease-in-out;
 }
 
@@ -465,6 +497,10 @@ footer a:hover{
         display: none;
     }
 
+    main #about .container-fluid{
+        padding: 0 !important;
+    }
+
     #about-container {
         display: none;
     }
@@ -473,7 +509,7 @@ footer a:hover{
         display: none;
     }
 
-    #products-mobile{
+    #products-mobile {
         display: flex;
     }
 
@@ -572,7 +608,7 @@ footer a:hover{
         width: 50%;
     }
 
-    #home-swiper .swiper-slide{
+    #home-swiper .swiper-slide {
         height: 60vh !important;
     }
 
@@ -607,6 +643,29 @@ footer a:hover{
     #about-container,
     #products-container {
         display: none;
+    }
+
+    main #about .container-fluid{
+        padding: 0 !important;
+    }
+
+    main #about-option{
+        width: 33.3% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 150px !important;
+    }
+
+    main #about-option h1{
+        font-size: 25px !important;
+        hyphens: auto;
+        word-break: break-word;
+        margin: 0 !important;
+    }
+
+    main #about-option .fa-arrow-pointer{
+        width: 30px !important;
+        height: 30px !important;
     }
 
     main #home .col button h3 {
