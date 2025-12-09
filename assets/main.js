@@ -120,14 +120,79 @@ function animCursor(el, enter) {
                         })
                     }
                 })
-             }
+            }
         })
     } else {
         gsap.to(el, {
             duration: 0.5,
-            x: 0,
-            y: 0,
+            x: 50,
+            y: 50,
             rotate: 0
         })
     }
 }
+
+let lastY = null;
+
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.65 
+};
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            lastY = entry.boundingClientRect.top;
+            gsap.to(entry.target, {
+                duration: 0.5,
+                x: 0,
+                opacity: 1,
+                onComplete: () => {
+                    const childEl = entry.target.querySelectorAll('.fade-in-children')
+                    if(childEl.length){
+                        childEl.forEach((child) => {
+                            gsap.to(child, {
+                                delay: 0.3,
+                                duration: 0.65,
+                                x: 0,
+                                opacity: 1,
+                            })
+                        })
+                    }
+                }
+            })
+
+            return;
+        }
+
+        const currentY = entry.boundingClientRect.top;
+
+        if (lastY !== null && currentY > lastY) {
+            gsap.to(entry.target, {
+                duration: 0.5,
+                x: -100,
+                opacity: 0,
+                onComplete: () => {
+                    const childEl = entry.target.querySelectorAll('.fade-in-children')
+                    if(childEl.length > 0){
+                        childEl.forEach((child) => {
+                            gsap.to(child, {
+                                duration: 0.5,
+                                x: -100,
+                                opacity: 0,
+                            })
+                        })
+                    }
+                }
+            })
+        }
+
+    });
+}, options);
+const elements = document.querySelectorAll('.fade-in')
+elements.forEach((element) => {
+    observer.observe(element)
+})

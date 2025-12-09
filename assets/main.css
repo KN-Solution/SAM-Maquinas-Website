@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 header {
     height: 90px;
@@ -184,6 +185,16 @@ main #home-swiper .swiper-slide {
     text-align: left;
 }
 
+.fade-in{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.fade-in-children{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
 main #home-swiper .swiper-slide img {
     height: 100%;
     width: 100%;
@@ -258,6 +269,7 @@ main #about .col .row {
     flex-direction: column;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 #about-option h1{
@@ -268,6 +280,10 @@ main #about .col .row {
     background-color: #3098cd;
     color: white;
     transition: 0.3s ease-in-out;
+}
+
+#about-option .fa-arrow-pointer{
+    transform: translateX(50px) translateY(50px);
 }
 
 main #about .col .row:hover,
@@ -310,8 +326,15 @@ main #products #product-swiper .swiper-slide {
     }
 }
 
+main #products-container img{
+    object-fit: contain;
+    max-height: 180px;
+    max-width: 235px;
+}
+
 main #products-container #all-laser-machines .card {
     cursor: pointer;
+    height: 30vh;
 }
 
 #products-mobile {
