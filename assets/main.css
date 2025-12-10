@@ -391,7 +391,7 @@ main #home-mobile {
 
 footer {
     font-family: 'Readex Pro', sans-serif;
-    height: 230px;
+    height: 390px;
     /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
     background-color: #3098cd;
 }
@@ -407,6 +407,24 @@ footer .col {
 footer a:hover {
     color: white;
     transition: 0.3s ease-in-out;
+}
+
+#footer-contact-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 860px){
+    footer{
+        height: 560px;
+    }
+
+    .footer-contact{
+        display: none;
+    }
+
+    #footer-contact-mobile{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 850px) and (min-width: 721px) {
@@ -532,10 +550,6 @@ footer a:hover {
         display: none;
     }
 
-    #products-mobile {
-        display: flex;
-    }
-
     #contact-desktop {
         display: none;
     }
@@ -566,13 +580,12 @@ footer a:hover {
         height: 40px;
         margin-right: 10px;
     }
-
 }
 
 @media screen and (max-width: 720px) {
 
     header {
-        height: 100px;
+        height: 125px;
         z-index: 1000;
     }
 
@@ -591,20 +604,16 @@ footer a:hover {
     header #burguer-menu {
         display: block;
         z-index: 9999;
+        margin-top: 20px;
     }
 
     main {
-        padding-top: 100px;
+        padding-top: 125px;
         z-index: 500;
     }
 
     main #home .text-center {
         display: none;
-    }
-
-    header #burguer-menu {
-        margin-top: 0px;
-        z-index: 9999;
     }
 
     header #burguer-menu .fa-bars {
@@ -632,7 +641,11 @@ footer a:hover {
     }
 
     #home-swiper .swiper-slide {
-        height: 60vh !important;
+        height: 65vh !important;
+    }
+
+    #home-swiper .swiper-slide img{
+        object-fit: cover !important;
     }
 
     #home-mobile {
@@ -656,7 +669,7 @@ footer a:hover {
     }
 
     main #home .col p {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     main #home .col button {
@@ -822,5 +835,9 @@ footer a:hover {
 
     #burguer-menu {
         font-size: 26px !important;
+    }
+
+    #products-mobile {
+        display: flex;
     }
 }
