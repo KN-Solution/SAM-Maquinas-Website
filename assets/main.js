@@ -63,6 +63,38 @@ const aboutSwiper = new Swiper('#about-swiper', {
     }
 })
 
+const partnerSwiper = new Swiper('#swiper-partners', {
+    freemode: false,
+    loop: true,
+    speed: 5000,
+    slidesPerView: 6,
+    spaceBetween: 30,
+    simulateTouch: false,
+    grabCursor: false,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    breakpoints:{
+        1200:{
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+        860:{
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        600:{
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        400:{
+            slidesPerView: 2,
+            spaceBetween: 10,
+        }
+    }
+})
+
 function changeContent(contentID, menu) {
     const contentList = document.querySelectorAll('.content');
     const menuList = document.querySelectorAll('.menu-item');

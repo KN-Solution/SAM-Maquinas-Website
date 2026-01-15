@@ -185,12 +185,12 @@ main #home-swiper .swiper-slide {
     text-align: left;
 }
 
-.fade-in{
+.fade-in {
     transform: translateX(-100px);
     opacity: 0;
 }
 
-.fade-in-children{
+.fade-in-children {
     opacity: 0;
     transform: translateX(-30px);
 }
@@ -259,7 +259,7 @@ main #about .col .row {
     }
 }
 
-#about-option{
+#about-option {
     width: 30%;
     height: 200px;
     display: flex;
@@ -272,17 +272,17 @@ main #about .col .row {
     overflow: hidden;
 }
 
-#about-option h1{
+#about-option h1 {
     text-align: left;
 }
 
-#about-option:hover{
+#about-option:hover {
     background-color: #3098cd;
     color: white;
     transition: 0.3s ease-in-out;
 }
 
-#about-option .fa-arrow-pointer{
+#about-option .fa-arrow-pointer {
     transform: translateX(50px) translateY(50px);
 }
 
@@ -326,7 +326,7 @@ main #products #product-swiper .swiper-slide {
     }
 }
 
-main #products-container img{
+main #products-container img {
     object-fit: contain;
     max-height: 180px;
     max-width: 235px;
@@ -362,6 +362,22 @@ main #contact img {
     width: 70%;
 }
 
+#partners #swiper-partners{
+    width: 100%;
+    height: 200px;
+}
+
+#partners #swiper-partners .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#partners #swiper-partners .swiper-slide img {
+    height: 100%;
+    object-fit: contain;
+}
+
 main #contact a {
     text-decoration: none;
     font-size: 18px;
@@ -391,7 +407,7 @@ main #home-mobile {
 
 footer {
     font-family: 'Readex Pro', sans-serif;
-    height: 390px;
+    height: 480px;
     /* background-image: linear-gradient(to top, #dc3545, #dc3545 80%, white 100%); */
     background-color: #3098cd;
 }
@@ -404,6 +420,10 @@ footer .col {
     color: white;
 }
 
+footer .col{
+    margin-bottom: 8px;
+}
+
 footer a:hover {
     color: white;
     transition: 0.3s ease-in-out;
@@ -413,16 +433,30 @@ footer a:hover {
     display: none;
 }
 
-@media screen and (max-width: 860px){
-    footer{
+.footer-contact .fa-globe,
+.footer-contact .fa-envelope,
+.footer-contact .fa-whatsapp,
+.footer-contact .fa-instagram {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 860px) {
+    footer {
         height: 560px;
     }
 
-    .footer-contact{
+    .footer-contact {
         display: none;
     }
 
-    #footer-contact-mobile{
+    #footer-contact-mobile {
         display: flex;
     }
 }
@@ -538,7 +572,7 @@ footer a:hover {
         display: none;
     }
 
-    main #about .container-fluid{
+    main #about .container-fluid {
         padding: 0 !important;
     }
 
@@ -644,7 +678,7 @@ footer a:hover {
         height: 65vh !important;
     }
 
-    #home-swiper .swiper-slide img{
+    #home-swiper .swiper-slide img {
         object-fit: cover !important;
     }
 
@@ -681,25 +715,25 @@ footer a:hover {
         display: none;
     }
 
-    main #about .container-fluid{
+    main #about .container-fluid {
         padding: 0 !important;
     }
 
-    main #about-option{
+    main #about-option {
         width: 33.3% !important;
         margin: 0 !important;
         padding: 0 !important;
         height: 150px !important;
     }
 
-    main #about-option h1{
+    main #about-option h1 {
         font-size: 25px !important;
         hyphens: auto;
         word-break: break-word;
         margin: 0 !important;
     }
 
-    main #about-option .fa-arrow-pointer{
+    main #about-option .fa-arrow-pointer {
         width: 30px !important;
         height: 30px !important;
     }
