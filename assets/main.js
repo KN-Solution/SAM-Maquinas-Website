@@ -67,7 +67,6 @@ const partnerSwiper = new Swiper('#swiper-partners', {
     freemode: false,
     loop: true,
     speed: 5000,
-    slidesPerView: 6,
     spaceBetween: 30,
     simulateTouch: false,
     grabCursor: false,
@@ -88,7 +87,7 @@ const partnerSwiper = new Swiper('#swiper-partners', {
             slidesPerView: 3,
             spaceBetween: 10,
         },
-        400:{
+        450:{
             slidesPerView: 2,
             spaceBetween: 10,
         }

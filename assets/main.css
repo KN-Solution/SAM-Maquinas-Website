@@ -695,6 +695,10 @@ footer a:hover {
         background-size: 102% !important;
     }
 
+    #mid-banner h1, #mid-banner p {
+        display: none;
+    }
+
     main #home .col h1 {
         font-size: 40px !important;
     }
