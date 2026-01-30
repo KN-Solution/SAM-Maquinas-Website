@@ -227,3 +227,28 @@ const elements = document.querySelectorAll('.fade-in')
 elements.forEach((element) => {
     observer.observe(element)
 })
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('header', {
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    'box-shadow': '0px 4px 4px rgba(0, 0, 0, 0.244)',
+    ease: 'none',
+    scrollTrigger: {
+        trigger: document.body,
+        start: 'top top',
+        end: 'top -620',
+        scrub: true
+    }
+})
+
+gsap.to('header a', {
+    color: '#000000ff',
+    ease: 'none',
+    scrollTrigger: {
+        trigger: document.body,
+        start: 'top top',
+        end: 'top -620',
+        scrub: true
+    }
+})

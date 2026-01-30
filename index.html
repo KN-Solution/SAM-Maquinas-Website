@@ -9,7 +9,7 @@
     <meta property="og:description"
         content="A SAM Importação de Máquinas LTDA é uma empresa especializada na importação e comercialização de máquinas industriais de alta performance, atendendo os setores metalúrgico, agrícola, têxtil entre outros. Com sede em Brusque/SC, a empresa atua conectando fabricantes internacionais a empresas nacionais, oferecendo soluções eficientes e tecnológicas para otimização de processos produtivos.">
     <meta property="og:image"
-        content="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/logo.jpg">
+        content="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/logo.png">
     <meta property="og:url" content="https://sammaquinas.com.br">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -38,24 +38,9 @@
 <body>
 
     <header>
-        <!-- <div id="top-header" class="row">
-            <div class="col-4"></div>
-            <div class="col">
-                <i class="fa-solid fa-envelope"></i>&nbsp;
-                contato@sammaquinas.com.br
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-globe"></i>&nbsp;
-                www.sammaquinas.com.br
-            </div>
-            <div class="col">
-                <i class="fa-brands fa-whatsapp"></i>&nbsp;
-                47 99170-7509
-            </div>
-        </div> -->
         <div id="main-header" class="row">
             <div class="col" id="logo">
-                <img src="./assets/imgs/logo.jpg" alt="">
+                <img src="./assets/imgs/logo.png" alt="">
             </div>
             <div class="col-1">
                 <a href="/#main">Ínicio</a>
@@ -104,18 +89,25 @@
                 </a>
             </div>
         </div>
+        <div id="whatsapp-fab">
+            <a href="https://wa.me/5547991707509" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
         <div class="swiper" id="home-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <h1 class="mb-5 fade-in"
-                        style="width: 45%; font-style: italic; font-weight: bold; text-decoration: underline; margin-left: 20px;">
-                        Importe sua máquina da China com assessoria especializada!</h1>
+                    <div class="fade-in" id="home-letter-box">
+                        <h1>Importe sua máquina da <b class="text-danger">China</b> com assessoria <b
+                                class="text-primary">especializada</b>.</h1>
+                    </div>
                     <img class="gif" data-animated="./assets/imgs/AdobeStock_optimize-1.gif"
                         src="./assets/imgs/AdobeStock_optimize-1.gif" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h1 class="mb-5" style="width: 40%; font-style: italic; margin-left: 20px;">Da China para o seu
-                        negócio, há mais de 30 anos!</h1>
+                    <div class="fade-in" id="home-letter-box">
+                        <h1>Da China para o seu negócio, há mais de 30 anos!</h1>
+                    </div>
                     <img class="gif" data-animated="./assets/imgs/AdobeStock_optimize-2.gif"
                         src="./assets/imgs/AdobeStock_optimize-2.gif" alt="">
                 </div>
@@ -129,288 +121,107 @@
             <h1 class="mt-3">Nosso Portfólio</h1>
             <div class="row mt-5 mb-5" id="products-container">
                 <div class="col">
-                    <div class="card" style="height: 550px;">
-                        <div class="card-body" style="display: flex;">
-                            <!-- <div class="col-2"
-                                    style="margin-right: 15px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-                                    <ul class="list-group list-group-flush"
-                                        style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
-                                        <li class="list-group-item"
-                                            style="flex: 1; align-items: center; justify-content: center; display: flex; cursor: pointer;"
-                                            onclick="gsap.to('.content', {display: 'none', duration: 0}); gsap.to('#laser-machines', {display: 'flex', duration: 0.2});">
-                                            Laser
-                                        </li>
-                                        <li class="list-group-item"
-                                            style="flex: 1; align-items: center; justify-content: center; display: flex; cursor: pointer;"
-                                            onclick="gsap.to('.content', {display: 'none', duration: 0}); gsap.to('#dobradeiras-machines', {display: 'flex', duration: 0.2});">
-                                            Dobradeiras
-                                        </li>
-                                        <li class="list-group-item"
-                                            style="flex: 1; align-items: center; justify-content: center; display: flex; cursor: pointer;"
-                                            onclick="gsap.to('.content', {display: 'none', duration: 0}); gsap.to('#empilhadeiras-machine', {display: 'flex', duration: 0.2});">
-                                            Empilhadeira
-                                        </li>
-                                        <li class="list-group-item"
-                                            style="flex: 1; align-items: center; justify-content: center; display: flex; cursor: pointer;"
-                                            onclick="gsap.to('.content', {display: 'none', duration: 0}); gsap.to('#marking-machine', {display: 'flex', duration: 0.2});">
-                                            Serra
-                                        </li>
-                                    </ul>
-                                </div> -->
-                            <div class="col content" id="laser-machines" style="display: flex; flex-direction: column;">
-                                <!-- <div class="row">
-                                        <div class="col" style="cursor: pointer; border-right: 1px solid gray;"
-                                            onclick="gsap.to('.laser-machines', {display: 'none', duration: 0}); gsap.to('#all-laser-machines', {display: 'flex', duration: 0.2});">
-                                            Todos</div>
-                                        <div class="col" style="cursor: pointer; border-right: 1px solid gray;"
-                                            onclick="gsap.to('.laser-machines', {display: 'none', duration: 0}); gsap.to('#fiber-laser-machines', {display: 'flex', duration: 0.2});">
-                                            Laser de Fibra</div>
-                                        <div class="col" style="cursor: pointer; border-right: 1px solid gray; "
-                                            onclick="gsap.to('.laser-machines', {display: 'none', duration: 0}); gsap.to('#co2-laser-machines', {display: 'flex', duration: 0.2});">
-                                            Laser CO2</div>
-                                        <div class="col" style="cursor: pointer; border-right: 1px solid gray;"
-                                            onclick="gsap.to('.laser-machines', {display: 'none', duration: 0}); gsap.to('#metal-laser-machines', {display: 'flex', duration: 0.2});">
-                                            Laser de Metal</div>
-                                        <div class="col" style="cursor: pointer; margin-right: 25px;"
-                                            onclick="gsap.to('.laser-machines', {display: 'none', duration: 0}); gsap.to('#non-metal-laser-machines', {display: 'flex', duration: 0.2});">
-                                            Laser não Metal</div>
-                                    </div> -->
-                                <div class="laser-machines"
-                                    style="height: 520px; overflow: scroll; display: flex; flex-wrap: wrap; flex-direction: row;"
-                                    id="all-laser-machines">
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/solda-laser'">
-                                        <img src="./assets/imgs/" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Solda a laser</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/corte-laser'">
-                                        <img src="./assets/imgs/mach-2.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Corte a laser</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/gravacao-laser'">
-                                        <img src="./assets/imgs/mach-4.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Gravação a laser</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/prensa-dobradeira'">
-                                        <img src="./assets/imgs/mach-1.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Prensa dobradeira</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/torno-cnc'">
-                                        <img src="./assets/imgs/torno-cnc.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Torno CNC</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/centro-usinagem'">
-                                        <img src="./assets/imgs/centro-usinagem.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Centro usinagem</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/guilhotina'">
-                                        <img src="./assets/imgs/guilhotina.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Guilhotina</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/curvadeira-cnc'">
-                                        <img src="./assets/imgs/curvadeira-de-tubos.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Curvadeira CNC</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/empilhadeira' ">
-                                        <img src="./assets/imgs/empilhadeira.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Empilhadeiras</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/serra'">
-                                        <img src="./assets/imgs/serra.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Serra</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/pecas-reposicao'">
-                                        <img src="./assets/imgs/pecas-reposicao.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Peças de reposição</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card m-1" style="width: 19%;"
-                                        onclick="window.location = '/produto/calandra'">
-                                        <img src="./assets/imgs/calandra.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Calandra</h6>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="card m-1" style="width: 19%; height: fit-content;">
-                                            <img src="./assets/imgs/3015lnr.png" alt="" class="card-img-top">
-                                            <div class="card-body p-0">
-                                                <h6 class="card-subtitle">3015 LNR</h6>
-                                            </div>
-                                        </div>
-                                        <div class="card m-1" style="width: 19%; height: fit-content;">
-                                            <img src="./assets/imgs/3015lnr.png" alt="" class="card-img-top">
-                                            <div class="card-body p-0">
-                                                <h6 class="card-subtitle">3015 LNR</h6>
-                                            </div>
-                                        </div>
-                                        <div class="card m-1" style="width: 19%; height: fit-content;">
-                                            <img src="./assets/imgs/3015lnr.png" alt="" class="card-img-top">
-                                            <div class="card-body p-0">
-                                                <h6 class="card-subtitle">3015 LNR</h6>
-                                            </div>
-                                        </div> -->
-                                    <!-- <div class="card m-1" style="width: 19%; height: fit-content;">
-                                            <img src="./assets/imgs/3015lnr.png" alt="" class="card-img-top">
-                                            <div class="card-body p-0">
-                                                <h6 class="card-subtitle">3015 LNR</h6>
-                                            </div>
-                                        </div>
-                                        <div class="card m-1" style="width: 19%; height: fit-content;">
-                                            <img src="./assets/imgs/3015lnr.png" alt="" class="card-img-top">
-                                            <div class="card-body p-0">
-                                                <h6 class="card-subtitle">3015 LNR</h6>
-                                            </div>
-                                        </div>
-                                        <div class="card m-1" style="width: 19%; height: fit-content;">
-                                            <img src="./assets/imgs/3015lnr.png" alt="" class="card-img-top">
-                                            <div class="card-body p-0">
-                                                <h6 class="card-subtitle">3015 LNR</h6>
-                                            </div>
-                                        </div>
-                                        <div class="card m-1" style="width: 19%; height: fit-content;">
-                                            <img src="./assets/imgs/3015lnr.png" alt="" class="card-img-top">
-                                            <div class="card-body p-0">
-                                                <h6 class="card-subtitle">3015 LNR</h6>
-                                            </div>
-                                        </div> -->
+                    <div class="col content" id="laser-machines" style="display: flex; flex-direction: column;">
+                        <div class="laser-machines"
+                            style="display: flex; flex-wrap: wrap; flex-direction: row;"
+                            id="all-laser-machines">
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/solda-laser'">
+                                <img src="./assets/imgs/" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Solda a laser</h6>
                                 </div>
                             </div>
-                            <div class="col content" id="dobradeiras-machines"
-                                style="display: flex; flex-direction: column; display: none;">
-                                <div
-                                    style="height: 100%; overflow-y: scroll; display: flex; flex-wrap: wrap; flex-direction: row;">
-                                    <div class="card m-1" style="width: 19%; height: fit-content;">
-                                        <img src="./assets/imgs/dobradeira.png" alt="" class="card-img-top">
-                                        <div class="card-body p-0">
-                                            <h6 class="card-subtitle">Dobradeira</h6>
-                                        </div>
-                                    </div>
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/corte-laser'">
+                                <img src="./assets/imgs/mach-2.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Corte a laser</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/gravacao-laser'">
+                                <img src="./assets/imgs/mach-4.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Gravação a laser</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/prensa-dobradeira'">
+                                <img src="./assets/imgs/mach-1.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Prensa dobradeira</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;" onclick="window.location = '/produto/torno-cnc'">
+                                <img src="./assets/imgs/torno-cnc.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Torno CNC</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/centro-usinagem'">
+                                <img src="./assets/imgs/centro-usinagem.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Centro usinagem</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;" onclick="window.location = '/produto/guilhotina'">
+                                <img src="./assets/imgs/guilhotina.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Guilhotina</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/curvadeira-cnc'">
+                                <img src="./assets/imgs/curvadeira-de-tubos.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Curvadeira CNC</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/empilhadeira' ">
+                                <img src="./assets/imgs/empilhadeira.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Empilhadeiras</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;" onclick="window.location = '/produto/serra'">
+                                <img src="./assets/imgs/serra.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Serra</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;"
+                                onclick="window.location = '/produto/pecas-reposicao'">
+                                <img src="./assets/imgs/pecas-reposicao.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Peças de reposição</h6>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 19%;" onclick="window.location = '/produto/calandra'">
+                                <img src="./assets/imgs/calandra.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Calandra</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="swiper" id="product-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/imgs/3015epro.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/imgs/3015lnr.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/imgs/curvadeira-de-tubos.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/imgs/dobradeira.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/imgs/empilhadeira.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/imgs/marking.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/imgs/serra.png" alt="">
+                    <div class="col content" id="dobradeiras-machines"
+                        style="display: flex; flex-direction: column; display: none;">
+                        <div
+                            style="height: 100%; overflow-y: scroll; display: flex; flex-wrap: wrap; flex-direction: row;">
+                            <div class="card m-1" style="width: 19%; height: fit-content;">
+                                <img src="./assets/imgs/dobradeira.png" alt="" class="card-img-top">
+                                <div class="card-body p-0">
+                                    <h6 class="card-subtitle">Dobradeira</h6>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- <div id="products-mobile" style="flex-direction: column; align-items: center;">
-                <div class="row" style="width: 100%;">
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; text-align: left; padding-top: 10px; padding-bottom: 10px;">
-                        <p>Solda a laser <a href="/produto/solda-laser/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/lf1325lc.webp" alt="" style="width: 100%;">
-                    </div>
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Corte a laser <a href="/produto/corte-laser/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/lf1325lc.webp" alt="" style="width: 100%;">
-                    </div>
-                </div>
-                <div class="row" style="width: 100%;">
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Prensa dobradeira <a href="/produto/prensa-dobradeira/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/lf1325lc.webp" alt="" style="width: 100%;">
-                    </div>
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Torno CNC <a href="/produto/torno-cnc/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/lf1325lc.webp" alt="" style="width: 100%;">
-                    </div>
-                </div>
-                <div class="row" style="width: 100%;">
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Centro de usinagem <a href="/produto/centro-usinagem/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/empilhadeira.png" alt="" style="height: 68%;">
-                    </div>
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Guilhotina <a href="/produto/guilhotina/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/empilhadeira.png" alt="" style="height: 68%;">
-                    </div>
-                </div>
-                <div class="row" style="width: 100%;">
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Curvadeira CNC <a href="/produto/curvadeira-cnc/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/empilhadeira.png" alt="" style="height: 68%;">
-                    </div>
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Empilhadeira <a href="/produto/empilhadeira/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/empilhadeira.png" alt="" style="height: 68%;">
-                    </div>
-                </div>
-                <div class="row" style="width: 100%;">
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Calandra <a href="/produto/calandra/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/empilhadeira.png" alt="" style="height: 68%;">
-                    </div>
-                    <div class="col"
-                        style="border: 1px solid gray; height: 200px; padding-top: 10px; padding-bottom: 10px; text-align: left;">
-                        <p>Peças de reposição <a href="/produto/pecas-reposicao/">Saiba mais!</a></p>
-                        <img src="./assets/imgs/empilhadeira.png" alt="" style="height: 68%;">
-                    </div>
-                </div>
-            </div> -->
         </section>
-        <!-- <div class="col" id="home-mobile"></div> -->
         <div class="container">
             <section id="home">
                 <div class="row fade-in">
@@ -738,116 +549,117 @@
     <footer class="p-3">
         <div class="container">
             <div class="row">
-            <div class="col">
-                <h5>Seções</h5>
+                <div class="col">
+                    <h5>Seções</h5>
+                </div>
+                <div class="col">
+                    <h5>Máquinas</h5>
+                </div>
+                <div class="col footer-contact">
+                    <h5>Contato</h5>
+                </div>
             </div>
-            <div class="col">
-                <h5>Máquinas</h5>
+            <div class="row">
+                <div class="col">
+                    <a href="">Inicio</a>
+                </div>
+                <div class="col">
+                    <a href="">Solda a laser</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href="https://wa.me/5547991707509"><i class="fa-brands fa-whatsapp"></i> +55 (47) 99170-7509</a>
+                </div>
             </div>
-            <div class="col footer-contact">
-                <h5>Contato</h5>
+            <div class="row">
+                <div class="col">
+                    <a href="">Máquinas</a>
+                </div>
+                <div class="col">
+                    <a href="">Corte a laser</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href=""><i class="fa-solid fa-envelope"></i> contato@sammaquinas.com.br</a>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="">Inicio</a>
+            <div class="row">
+                <div class="col">
+                    <a href="">Empresa</a>
+                </div>
+                <div class="col">
+                    <a href="">Prensa drobadeira</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href="/"><i class="fa-solid fa-globe"></i> www.sammaquinas.com.br</a>
+                </div>
             </div>
-            <div class="col">
-                <a href="">Solda a laser</a>
+            <div class="row">
+                <div class="col">
+                    <a href="">Contatos</a>
+                </div>
+                <div class="col">
+                    <a href="">Torno CNC</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href="https://www.instagram.com/sam_maquinas/"><i class="fa-brands fa-instagram"></i>
+                        @sam_maquinas</a>
+                </div>
             </div>
-            <div class="col footer-contact">
-                <a href="https://wa.me/5547991707509"><i class="fa-brands fa-whatsapp"></i> +55 (47) 99170-7509</a>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Centro de usinagem</a>
+                </div>
+                <div class="col footer-contact"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="">Máquinas</a>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Guilhotina</a>
+                </div>
+                <div class="col footer-contact"></div>
             </div>
-            <div class="col">
-                <a href="">Corte a laser</a>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Curvadeira CNC</a>
+                </div>
+                <div class="col footer-contact"></div>
             </div>
-            <div class="col footer-contact">
-                <a href=""><i class="fa-solid fa-envelope"></i> contato@sammaquinas.com.br</a>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Empilhadeira</a>
+                </div>
+                <div class="col footer-contact"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="">Empresa</a>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Calandra</a>
+                </div>
+                <div class="col footer-contact"></div>
             </div>
-            <div class="col">
-                <a href="">Prensa drobadeira</a>
+            <div class="row mb-3">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Peças de reposição</a>
+                </div>
+                <div class="col footer-contact"></div>
             </div>
-            <div class="col footer-contact">
-                <a href="/"><i class="fa-solid fa-globe"></i> www.sammaquinas.com.br</a>
+            <div class="row mb-4" id="footer-contact-mobile">
+                <div class="col text-center">
+                    <h5>Contatos</h5>
+                </div>
+                <div class="row text-center">
+                    <a href="https://wa.me/5547991707509"><i class="fa-brands fa-whatsapp"></i> +55 (47) 99170-7509</a>
+                </div>
+                <div class="row text-center">
+                    <a href=""><i class="fa-solid fa-envelope"></i> contato@sammaquinas.com.br</a>
+                </div>
+                <div class="row text-center">
+                    <a href=""><i class="fa-solid fa-globe"></i> www.sammaquinas.com.br</a>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="">Contatos</a>
-            </div>
-            <div class="col">
-                <a href="">Torno CNC</a>
-            </div>
-            <div class="col footer-contact">
-                <a href="https://www.instagram.com/sam_maquinas/"><i class="fa-brands fa-instagram"></i> @sam_maquinas</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <a href="">Centro de usinagem</a>
-            </div>
-            <div class="col footer-contact"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <a href="">Guilhotina</a>
-            </div>
-            <div class="col footer-contact"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <a href="">Curvadeira CNC</a>
-            </div>
-            <div class="col footer-contact"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <a href="">Empilhadeira</a>
-            </div>
-            <div class="col footer-contact"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <a href="">Calandra</a>
-            </div>
-            <div class="col footer-contact"></div>
-        </div>
-        <div class="row mb-3">
-            <div class="col"></div>
-            <div class="col">
-                <a href="">Peças de reposição</a>
-            </div>
-            <div class="col footer-contact"></div>
-        </div>
-        <div class="row mb-4" id="footer-contact-mobile">
-            <div class="col text-center">
-                <h5>Contatos</h5>
-            </div>
-            <div class="row text-center">
-                <a href="https://wa.me/5547991707509"><i class="fa-brands fa-whatsapp"></i> +55 (47) 99170-7509</a>
-            </div>
-            <div class="row text-center">
-                <a href=""><i class="fa-solid fa-envelope"></i> contato@sammaquinas.com.br</a>
-            </div>
-            <div class="row text-center">
-                <a href=""><i class="fa-solid fa-globe"></i> www.sammaquinas.com.br</a>
-            </div>
-        </div>
         </div>
         <div class="col text-center" id="mobile-footer">
             <p>© 2026 SAM Comércio de Máquinas LTDA. Todos os direitos reservados.</p>
@@ -866,7 +678,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -884,6 +696,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- GSAP-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- Bootstrap 5.2-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
