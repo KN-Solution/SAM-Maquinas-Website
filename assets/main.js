@@ -28,7 +28,7 @@ const homeSwiper = new Swiper("#home-swiper", {
     effect: "fade",
     slidesPerView: 1,
     autoplay: {
-        delay: 5000
+        delay: 5500
     },
     loop: true,
     simulateTouch: false,
@@ -74,20 +74,20 @@ const partnerSwiper = new Swiper('#swiper-partners', {
         delay: 0,
         disableOnInteraction: false,
     },
-    breakpoints:{
-        1200:{
+    breakpoints: {
+        1200: {
             slidesPerView: 5,
             spaceBetween: 30,
         },
-        860:{
+        860: {
             slidesPerView: 4,
             spaceBetween: 20,
         },
-        600:{
+        600: {
             slidesPerView: 3,
             spaceBetween: 10,
         },
-        450:{
+        450: {
             slidesPerView: 2,
             spaceBetween: 10,
         }
@@ -183,7 +183,7 @@ const observer = new IntersectionObserver((entries) => {
                 opacity: 1,
                 onComplete: () => {
                     const childEl = entry.target.querySelectorAll('.fade-in-children')
-                    if(childEl.length){
+                    if (childEl.length) {
                         childEl.forEach((child) => {
                             gsap.to(child, {
                                 delay: 0.3,
@@ -208,7 +208,7 @@ const observer = new IntersectionObserver((entries) => {
                 opacity: 0,
                 onComplete: () => {
                     const childEl = entry.target.querySelectorAll('.fade-in-children')
-                    if(childEl.length > 0){
+                    if (childEl.length > 0) {
                         childEl.forEach((child) => {
                             gsap.to(child, {
                                 duration: 0.5,
@@ -252,3 +252,52 @@ gsap.to('header a', {
         scrub: true
     }
 })
+
+function videoClick(thumb, overlay, modal, url) {
+
+    const thumbEl = document.getElementById(thumb);
+    const overlayEl = document.getElementById(overlay);
+    const modalEl = document.getElementById(modal);
+
+    overlayEl.style.display = 'flex';
+
+    const rect = thumbEl.getBoundingClientRect();
+
+    gsap.set(modalEl, {
+        position: 'absolute',
+        top: rect.top,
+        left: rect.left,
+        width: rect.width,
+        height: rect.height,
+    })
+
+    const tl = gsap.timeline();
+
+    tl.to(overlayEl, {
+        background: "rgba(0,0,0,0.8)",
+        duration: 0.3
+    })
+
+    tl.to(modalEl, {
+        top: "50%",
+        left: "50%",
+        xPercent: -50,
+        yPercent: -50,
+        width: "70vw",
+        height: "80vh",
+        duration: 0.5,
+        ease: "power3.out"
+    });
+
+    tl.call(() => {
+        const video = modalEl.querySelector('video');
+
+        if(!video.src){
+            video.src = url
+            video.load();
+        }
+
+        video.play();
+    })
+
+}

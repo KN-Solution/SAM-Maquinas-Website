@@ -140,7 +140,7 @@ main {
     font-family: 'Readex Pro', sans-serif;
 }
 
-main #product-content{
+main #product-content {
     padding-top: 150px;
     margin-top: 0 !important;
 }
@@ -196,14 +196,14 @@ main #home-swiper .swiper-slide img {
     z-index: 0;
 }
 
-main #home-swiper .swiper-slide::after{
+main #home-swiper .swiper-slide::after {
     content: '';
     position: absolute;
     inset: 0;
     background-image: linear-gradient(to top, rgba(0, 67, 154, 0.5), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 100%);
 }
 
-main #home-swiper .swiper-slide #home-letter-box{
+main #home-swiper .swiper-slide #home-letter-box {
     z-index: 1000;
     width: 100%;
     height: 100%;
@@ -220,7 +220,7 @@ main #home-swiper .swiper-slide h1 {
     text-align: center;
 }
 
-main #whatsapp-fab{
+main #whatsapp-fab {
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -229,7 +229,7 @@ main #whatsapp-fab{
     height: 50px;
 }
 
-main #whatsapp-fab .fa-whatsapp{
+main #whatsapp-fab .fa-whatsapp {
     width: 100%;
     height: 100%;
     color: white;
@@ -254,6 +254,35 @@ main #home img {
     width: 100%;
     border-radius: 5px;
     box-shadow: 1px 2px 8px gray;
+}
+
+#feedback-vids .col .player:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+#feedback-vids .col .video-modal video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#feedback-vids .col .video-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#feedback-vids .col .video-modal {
+    width: 16vw;
+    height: 63vh;
+    background: black;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 main #about .row.mb-5.mt-5 {
@@ -394,7 +423,7 @@ main #contact img {
     width: 70%;
 }
 
-#partners #swiper-partners{
+#partners #swiper-partners {
     width: 100%;
     height: 200px;
 }
@@ -452,7 +481,7 @@ footer .col {
     color: white;
 }
 
-footer .col{
+footer .col {
     margin-bottom: 8px;
 }
 
@@ -589,13 +618,6 @@ footer a:hover {
         font-size: 40px;
     }
 
-    #mid-banner {
-        background-image: url(./imgs/banner-2-mobile.jpeg) !important;
-        height: 85vh !important;
-        width: 102.6vw !important;
-        background-size: 105% !important;
-    }
-
     .swiper {
         display: none;
     }
@@ -665,7 +687,7 @@ footer a:hover {
         margin-top: 20px;
     }
 
-    main #home-letter-box h1{
+    main #home-letter-box h1 {
         padding-top: 100px;
         font-size: 250% !important;
         width: 90% !important;
@@ -714,17 +736,6 @@ footer a:hover {
         background-size: 105% !important;
         width: 100%;
         height: 80vh;
-    }
-
-    #mid-banner {
-        background-image: url(./imgs/banner-2-mobile.jpeg) !important;
-        height: 80vh !important;
-        width: 104vw !important;
-        background-size: 102% !important;
-    }
-
-    #mid-banner h1, #mid-banner p {
-        display: none;
     }
 
     main #home .col h1 {
@@ -925,7 +936,8 @@ footer a:hover {
 
 /* Remove largura fixa 19% */
 #products-container .laser-machines .card {
-    width: calc(19% - 10px) !important; /* 5 por linha desktop */
+    width: calc(19% - 10px) !important;
+    /* 5 por linha desktop */
     height: auto !important;
     transition: 0.2s ease;
     align-items: center;
@@ -953,7 +965,8 @@ footer a:hover {
 @media (max-width: 992px) {
 
     #products-container .laser-machines .card {
-        width: calc(23% - 10px) !important; /* 4 por linha */
+        width: calc(23% - 10px) !important;
+        /* 4 por linha */
     }
 
     #products-container .laser-machines img {
@@ -974,7 +987,8 @@ footer a:hover {
     }
 
     #products-container .laser-machines .card {
-        width: calc(50% - 10px) !important; /* 2 por linha */
+        width: calc(50% - 10px) !important;
+        /* 2 por linha */
     }
 
     #products-container .laser-machines img {
@@ -986,7 +1000,8 @@ footer a:hover {
 @media (max-width: 480px) {
 
     #products-container .laser-machines .card {
-        width: 100% !important; /* 1 por linha */
+        width: 100% !important;
+        /* 1 por linha */
         height: 180px !important;
     }
 
