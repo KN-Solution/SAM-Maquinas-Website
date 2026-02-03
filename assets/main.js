@@ -283,8 +283,9 @@ function videoClick(thumb, overlay, modal, url) {
         left: "50%",
         xPercent: -50,
         yPercent: -50,
-        width: "70vw",
-        height: "80vh",
+        width: "clamp(250px, 70vw, 420px)",
+        height: 'calc(clamp(250px, 70vw, 420px) * 16 / 9)',
+        'aspect-ratio': '16 / 9',
         duration: 0.5,
         ease: "power3.out"
     });
@@ -297,7 +298,55 @@ function videoClick(thumb, overlay, modal, url) {
             video.load();
         }
 
+        video.currentTime = 0;
+        
         video.play();
+    })
+
+}
+
+function closeVideo(thumb, overlay, modal){
+
+    const thumbEl = document.getElementById(thumb);
+    const overlayEl = document.getElementById(overlay);
+    const modalEl = document.getElementById(modal);
+
+    const rect = thumbEl.getBoundingClientRect();
+
+    const video = modalEl.querySelector('video');
+
+    video.pause();
+
+    const tl = gsap.timeline({
+        onComplete: () => {
+            overlayEl.style.display = 'none';
+
+            gsap.set(modalEl, {clearProps: 'all'});
+        }
+    });
+
+    tl.to(overlayEl, {
+        background: "rgba(0,0,0,0)",
+        duration: 0.3
+    })
+
+    tl.to(modalEl, {
+        top: rect.top,
+        left: rect.left,
+        width: rect.width,
+        height: rect.height,
+        xPercent: 0,
+        yPercent: 0,
+        duration: 0.3
+    });
+
+    tl.to(modalEl, {
+        opacity: 0,
+        duration: 0.1
+    })
+
+    tl.call(() => {
+        overlayEl.style.display = 'none';
     })
 
 }

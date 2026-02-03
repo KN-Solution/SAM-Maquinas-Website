@@ -337,20 +337,40 @@
                 <h1>O que nossos clientes dizem</h1>
                 <div class="row mt-5" id="feedback-vids">
                     <div class="col">
-                        <div class="player"></div>
-                    </div>
-                    <div class="col" style="display: flex; align-items: center; justify-content: center;">
-                        <div class="player" id="player-1" style="background-image: url('./assets/imgs/iw8_thumb.png'); background-repeat: no-repeat; width: 16vw; height: 63vh; background-size: contain; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 15px; transition: 0.3s ease-in-out; box-shadow: 1px 2px 8px gray;" onclick="videoClick('player-1', 'video-overlay-1', 'video-modal-1', './assets/vids/depoimento-iw8.mp4')">
+                        <div class="player" id="player-2" style="background-image: url('./assets/imgs/iw8_thumb.png');"
+                            onclick="videoClick('player-2', 'video-overlay-2', 'video-modal-2', './assets/vids/depoimento-iw8.mp4')">
                             <ion-icon name="play" style="width: 10vw; height: 10vh; color: white;"></ion-icon>
                         </div>
-                        <div class="video-overlay" id="video-overlay-1">
-                            <div class="video-modal" id="video-modal-1">
+                        <div class="video-overlay" id="video-overlay-2"
+                            onclick="closeVideo('player-2', 'video-overlay-2', 'video-modal-2')">
+                            <div class="video-modal" id="video-modal-2" onclick="event.stopPropagation()">
+                                <video id="video-2" playsinline preload="none"></video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="player" id="player-1" style="background-image: url('./assets/imgs/torresani_thumb.png');"
+                            onclick="videoClick('player-1', 'video-overlay-1', 'video-modal-1', './assets/vids/depoimento-torresani.mp4')">
+                            <ion-icon name="play" style="width: 10vw; height: 10vh; color: white;"></ion-icon>
+                        </div>
+                        <div class="video-overlay" id="video-overlay-1"
+                            onclick="closeVideo('player-1', 'video-overlay-1', 'video-modal-1')">
+                            <div class="video-modal" id="video-modal-1" onclick="event.stopPropagation()">
                                 <video id="video-1" playsinline preload="none"></video>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div id="player"></div>
+                        <div class="player" id="player-3" style="background-image: url('./assets/imgs/iw8_thumb.png');"
+                            onclick="videoClick('player-3', 'video-overlay-3', 'video-modal-3', './assets/vids/depoimento-iw8.mp4')">
+                            <ion-icon name="play" style="width: 10vw; height: 10vh; color: white;"></ion-icon>
+                        </div>
+                        <div class="video-overlay" id="video-overlay-3"
+                            onclick="closeVideo('player-3', 'video-overlay-3', 'video-modal-3')">
+                            <div class="video-modal" id="video-modal-3" onclick="event.stopPropagation()">
+                                <video id="video-3" playsinline preload="none"></video>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
