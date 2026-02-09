@@ -348,8 +348,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col" style="display: flex; align-items: center; justify-content: center;">
-                        <div class="player" id="player-1" style="background-image: url('./assets/imgs/torresani_thumb.png');"
+                    <div class="col">
+                        <div class="player" id="player-1"
+                            style="background-image: url('./assets/imgs/torresani_thumb.png');"
                             onclick="videoClick('player-1', 'video-overlay-1', 'video-modal-1', './assets/vids/depoimento-torresani.mp4')">
                             <ion-icon name="play" style="width: 10vw; height: 10vh; color: white;"></ion-icon>
                         </div>
@@ -361,8 +362,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="player" id="player-3" style="background-image: url('./assets/imgs/iw8_thumb.png');"
-                            onclick="videoClick('player-3', 'video-overlay-3', 'video-modal-3', './assets/vids/depoimento-iw8.mp4')">
+                        <div class="player" id="player-3"
+                            style="background-image: url('./assets/imgs/mag_thumb.png');"
+                            onclick="videoClick('player-3', 'video-overlay-3', 'video-modal-3', './assets/vids/depoimento-mag.mp4')">
                             <ion-icon name="play" style="width: 10vw; height: 10vh; color: white;"></ion-icon>
                         </div>
                         <div class="video-overlay" id="video-overlay-3"
@@ -372,6 +374,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="player" id="player-4"
+                            style="background-image: url('./assets/imgs/orbital_thumb.png');"
+                            onclick="videoClick('player-4', 'video-overlay-4', 'video-modal-4', './assets/vids/depoimento-orbital.mp4')">
+                            <ion-icon name="play" style="width: 10vw; height: 10vh; color: white;"></ion-icon>
+                        </div>
+                        <div class="video-overlay" id="video-overlay-4"
+                            onclick="closeVideo('player-4', 'video-overlay-4', 'video-modal-4')">
+                            <div class="video-modal" id="video-modal-4" onclick="event.stopPropagation()">
+                                <video id="video-4" playsinline preload="none"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5" id="feedback-vids">
+                    
                 </div>
             </section>
             <section class="text-center" id="about">
