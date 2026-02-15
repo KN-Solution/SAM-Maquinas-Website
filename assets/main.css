@@ -256,7 +256,7 @@ main #home img {
     box-shadow: 1px 2px 8px gray;
 }
 
-#feedback-vids .col{
+#feedback-vids .col {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,8 +339,7 @@ main #about .col .row {
     }
 }
 
-#about-option {
-    width: 30%;
+.about-option {
     height: 200px;
     display: flex;
     border: 1px solid #3098cd;
@@ -352,18 +351,20 @@ main #about .col .row {
     overflow: hidden;
 }
 
-#about-option h1 {
+.about-option h1 {
     text-align: left;
 }
 
-#about-option:hover {
+.about-option:hover {
     background-color: #3098cd;
     color: white;
     transition: 0.3s ease-in-out;
 }
 
-#about-option .fa-arrow-pointer {
+.about-option .fa-arrow-pointer {
     transform: translateX(50px) translateY(50px);
+    width: 40px;
+    height: 40px;
 }
 
 main #about .col .row:hover,
@@ -1032,5 +1033,65 @@ footer a:hover {
 
     #products-container .card-subtitle {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* deixa o banner crescer conforme conteúdo */
+    #mid-banner {
+        height: auto !important;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    /* imagem vira background normal */
+    #mid-banner img {
+        position: relative !important;
+        width: 100vw !important;
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    /* remove margens fixas */
+    #mid-banner .row {
+        margin-left: 0 !important;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* remove o empurrão absurdo */
+    #mid-banner .fade-in-children {
+        margin-top: 0 !important;
+    }
+
+    /* títulos menores */
+    #mid-banner h1 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+        height: auto !important;
+    }
+
+    #mid-banner h2 {
+        font-size: clamp(1.2rem, 5vw, 1.8rem) !important;
+        height: auto !important;
+    }
+
+    /* listas lado a lado viram coluna */
+    #mid-banner ul {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    #mid-banner .row .row {
+        flex-direction: column;
+    }
+
+    #mid-banner .row .row .col {
+        width: 100%;
+    }
+
+    /* parágrafos legíveis */
+    #mid-banner p {
+        font-size: 0.95rem !important;
     }
 }
