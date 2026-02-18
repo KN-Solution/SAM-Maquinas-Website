@@ -46,26 +46,100 @@
             font-size: medium;
             margin-bottom: 10px;
         }
+
+        /* Ajuste geral da seção */
+        .container .row {
+            align-items: flex-start;
+        }
+
+        /* Ajusta o embed que está deslocado */
+        .container blockquote.instagram-media {
+            /* transform: none !important; */
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        #main-header a{
+            color: black !important;
+        }
+
+        main{
+            padding-top: 90px;
+        }
+
+        main .row.p-5{
+            width: fit-content;
+        }
+
+
+        /* ===== TABLET ===== */
+        @media (max-width: 992px) {
+
+            .container .col-7,
+            .container .col-5 {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+
+            .container .col-5 {
+                padding-left: 0 !important;
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .container p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            .container .instagram-media {
+            transform: none !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        }
+
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 768px) {
+
+            .row.p-5 {
+                padding: 40px 20px !important;
+            }
+
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .container p {
+                font-size: 15px;
+                text-align: left;
+            }
+
+            .container .col-5 {
+                margin-top: 30px;
+            }
+        }
+
+
+        /* ===== MOBILE PEQUENO ===== */
+        @media (max-width: 480px) {
+
+            .row.p-5 {
+                padding: 30px 20px !important;
+                width: fit-content;
+            }
+
+            .container p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <!-- <div id="top-header" class="row">
-            <div class="col-4"></div>
-            <div class="col">
-                <i class="fa-solid fa-envelope"></i>&nbsp;
-                contato@sammaquinas.com.br
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-globe"></i>&nbsp;
-                www.sammaquinas.com.br
-            </div>
-            <div class="col">
-                <i class="fa-brands fa-whatsapp"></i>&nbsp;
-                47 99170-7509
-            </div>
-        </div> -->
         <div id="main-header" class="row">
             <div class="col" id="logo" onclick="location.href='/'">
                 <img src="../../assets/imgs/logo.png" alt="">
@@ -123,7 +197,7 @@
 
         <div class="container">
             <div class="row" id="first-row">
-                
+                <div class="col"></div>
                 <div class="col">
                     <div class="row">
                         <i class="fa-solid fa-check"></i> +30 anos de experiência no mercado.

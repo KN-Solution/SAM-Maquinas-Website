@@ -33,25 +33,103 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../assets/main.css">
     <title>SAM Máquinas</title>
+    <style>
+        /* ===== SOBRE NÓS RESPONSIVO ===== */
+
+        /* Ajuste geral da seção */
+        .container .row {
+            align-items: flex-start;
+        }
+
+        /* Ajusta o embed que está deslocado */
+        .container blockquote.instagram-media {
+            /* transform: none !important; */
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        #main-header a {
+            color: black !important;
+        }
+
+        main {
+            padding-top: 75px;
+        }
+
+        main .row.p-5 {
+            width: fit-content;
+        }
+
+
+        /* ===== TABLET ===== */
+        @media (max-width: 992px) {
+
+            .container .col-7,
+            .container .col-5 {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+
+            .container .col-5 {
+                padding-left: 0 !important;
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .container p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .container .instagram-media {
+                transform: none !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 768px) {
+
+            .row.p-5 {
+                padding: 40px 20px !important;
+            }
+
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .container p {
+                font-size: 15px;
+                text-align: left;
+            }
+
+            .container .col-5 {
+                margin-top: 30px;
+            }
+        }
+
+
+        /* ===== MOBILE PEQUENO ===== */
+        @media (max-width: 480px) {
+
+            .row.p-5 {
+                padding: 30px 20px !important;
+                width: fit-content;
+            }
+
+            .container p {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <!-- <div id="top-header" class="row">
-            <div class="col-4"></div>
-            <div class="col">
-                <i class="fa-solid fa-envelope"></i>&nbsp;
-                contato@sammaquinas.com.br
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-globe"></i>&nbsp;
-                www.sammaquinas.com.br
-            </div>
-            <div class="col">
-                <i class="fa-brands fa-whatsapp"></i>&nbsp;
-                47 99170-7509
-            </div>
-        </div> -->
         <div id="main-header" class="row">
             <div class="col" id="logo" onclick="location.href='/'">
                 <img src="../../assets/imgs/logo.png" alt="">
@@ -106,17 +184,26 @@
             <h1>Suporte</h1>
         </div>
 
-        <div class="container mb-5" style="padding-right: 300px;">
-            <p>Na SAM, o suporte ao cliente é parte central do nosso trabalho. Atuamos lado a lado com cada empresa
-                desde o primeiro contato até o pós-venda, garantindo clareza, agilidade e segurança em todas as etapas
-                do processo.</p>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col">
+                    <p>Na SAM, o suporte ao cliente é parte central do nosso trabalho. Atuamos lado a lado com cada
+                        empresa
+                        desde o primeiro contato até o pós-venda, garantindo clareza, agilidade e segurança em todas as
+                        etapas
+                        do processo.</p>
 
-            <p>Oferecemos acompanhamento técnico e comercial, auxiliando na escolha da máquina adequada, no alinhamento
-                com o fabricante, na logística, na documentação e na entrega. Nosso time tem conhecimento prático do
-                setor industrial e fala a mesma língua de quem está no chão de fábrica.</p>
+                    <p>Oferecemos acompanhamento técnico e comercial, auxiliando na escolha da máquina adequada, no
+                        alinhamento
+                        com o fabricante, na logística, na documentação e na entrega. Nosso time tem conhecimento
+                        prático do
+                        setor industrial e fala a mesma língua de quem está no chão de fábrica.</p>
 
-            <p>O objetivo é simples: reduzir riscos, evitar surpresas e garantir que o cliente receba exatamente o que
-                foi contratado. Para a SAM, suporte não é um diferencial opcional, é obrigação.</p>
+                    <p>O objetivo é simples: reduzir riscos, evitar surpresas e garantir que o cliente receba exatamente
+                        o que
+                        foi contratado. Para a SAM, suporte não é um diferencial opcional, é obrigação.</p>
+                </div>
+            </div>
         </div>
 
     </main>

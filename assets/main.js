@@ -78,18 +78,30 @@ const partnerSwiper = new Swiper('#swiper-partners', {
         1200: {
             slidesPerView: 5,
             spaceBetween: 30,
+            freemode: false,
+            simulateTouch: false,
+            grabCursor: false
         },
         860: {
             slidesPerView: 4,
             spaceBetween: 20,
+            freemode: false,
+            simulateTouch: false,
+            grabCursor: false
         },
         600: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 15,
+            freemode: false,
+            simulateTouch: false,
+            grabCursor: false
         },
         450: {
             slidesPerView: 2,
             spaceBetween: 10,
+            freemode: false,
+            simulateTouch: false,
+            grabCursor: false
         }
     }
 })
@@ -293,19 +305,19 @@ function videoClick(thumb, overlay, modal, url) {
     tl.call(() => {
         const video = modalEl.querySelector('video');
 
-        if(!video.src){
+        if (!video.src) {
             video.src = url
             video.load();
         }
 
         video.currentTime = 0;
-        
+
         video.play();
     })
 
 }
 
-function closeVideo(thumb, overlay, modal){
+function closeVideo(thumb, overlay, modal) {
 
     const thumbEl = document.getElementById(thumb);
     const overlayEl = document.getElementById(overlay);
@@ -321,7 +333,7 @@ function closeVideo(thumb, overlay, modal){
         onComplete: () => {
             overlayEl.style.display = 'none';
 
-            gsap.set(modalEl, {clearProps: 'all'});
+            gsap.set(modalEl, { clearProps: 'all' });
         }
     });
 
