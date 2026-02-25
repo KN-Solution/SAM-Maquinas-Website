@@ -34,6 +34,16 @@
     <link rel="stylesheet" href="../../assets/main.css">
     <title>SAM Máquinas</title>
     <style>
+        header {
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .fa-regular {
+            width: clamp(20px, 3vw, 25px);
+            height: clamp(20px, 3vw, 25px);
+        }
+
         #first-row .fa-check {
             width: 25px;
             height: 25px;
@@ -59,21 +69,41 @@
             max-width: 100% !important;
         }
 
-        #main-header a{
+        #main-header a {
             color: black !important;
         }
 
-        main{
+        main {
             padding-top: 90px;
         }
 
-        main .row.p-5{
+        main .row.p-5 {
             width: fit-content;
         }
 
+        .choose-icon {
+            width: clamp(100px, 15vw, 150px);
+            height: clamp(100px, 15vw, 150px);
+            border-radius: 25px;
+            border-color: #007bff;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .icon-blue {
+            background-color: #007bff;
+        }
+
+        .icon-light {
+            background-color: #f8f9fa;
+        }
 
         /* ===== TABLET ===== */
         @media (max-width: 992px) {
+
+            main{
+                padding-top: 120px;
+            }
 
             .container .col-7,
             .container .col-5 {
@@ -92,11 +122,30 @@
                 font-size: 16px;
                 line-height: 1.6;
             }
+
             .container .instagram-media {
-            transform: none !important;
-            width: 100% !important;
-            max-width: 100% !important;
-        }
+                transform: none !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .container .row.mb-5 .col-6 {
+                width: 100%;
+            }
+
+            .container .row.mb-5 .col-6 .row .col.text-center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container .col-4{
+                display: none;
+            }
+
+            footer{
+                height: 680px;
+            }
         }
 
 
@@ -193,11 +242,95 @@
             </div>
         </div>
 
-        <h1 class="p-4 pb-5">Porque escolher a SAM?</h1>
+        <h1 class="p-4 pb-5" style="font-family: 'REM', sans-serif">Porque escolher a SAM?</h1>
 
         <div class="container">
-            <div class="row" id="first-row">
-                <div class="col"></div>
+            <div class="row mb-5">
+                <div class="col-6">
+                    <div class="row p-4 pb-0 pt-0">
+                        <div class="col justify-content-center d-flex">
+                            <div class="choose-icon icon-blue d-flex align-items-center justify-content-center p-3">
+                                <i class="fa-regular fa-handshake text-white w-auto h-auto"></i>
+                            </div>
+                        </div>
+                        <div class="col justify-content-center d-flex">
+                            <div class="choose-icon icon-light d-flex align-items-center justify-content-center p-3">
+                                <i class="fa-solid fa-medal text-primary w-auto h-auto"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-4 pt-0 pb-2">
+                        <div class="col text-center">
+                            <p style="font-family: 'REM', sans-serif"><b>Comprometimento</b></p>
+                        </div>
+                        <div class="col text-center">
+                            <p style="font-family: 'REM', sans-serif"><b>Qualidade</b></p>
+                        </div>
+                    </div>
+                    <div class="row p-4 pt-3 pb-0">
+                        <div class="col justify-content-center d-flex">
+                            <div class="choose-icon icon-light d-flex align-items-center justify-content-center p-3">
+                                <i class="fa-solid fa-microchip text-primary w-auto h-auto"></i>
+                            </div>
+                        </div>
+                        <div class="col justify-content-center d-flex">
+                            <div class="choose-icon icon-blue d-flex align-items-center justify-content-center p-3">
+                                <i class="fa-regular fa-comments text-light w-auto h-auto"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-4 pt-0 pb-2">
+                        <div class="col text-center">
+                            <p style="font-family: 'REM', sans-serif"><b>Tecnologia</b></p>
+                        </div>
+                        <div class="col text-center">
+                            <p style="font-family: 'REM', sans-serif"><b>Atendimento</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="swiper choose-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="font-family: 'REM', sans-serif">
+                                <h2>Comprometimento</h2>
+                                <p>A SAM Máquinas acredita que comprometimento é cumprir o que foi combinado, no prazo e
+                                    com qualidade técnica. Cada projeto é tratado com responsabilidade desde o primeiro
+                                    contato até a entrega final, com foco em segurança, precisão e desempenho das
+                                    máquinas.</p>
+
+                                   <p>Nosso compromisso é com a produtividade do cliente. Isso significa atendimento
+                                    rápido, peças confiáveis, manutenção bem executada e suporte contínuo para evitar
+                                    paradas e prejuízos. Trabalhamos com transparência, assumindo erros quando acontecem
+                                    e corrigindo sem enrolação.</p>
+
+                                    <p>Para a SAM Máquinas, comprometimento não é discurso. É padrão de trabalho diário.
+                                </p>
+                            </div>
+                            <div class="swiper-slide" style="font-family: 'REM', sans-serif">
+                                <h2>Qualidade</h2>
+                                <p>A SAM Máquinas trata qualidade como requisito técnico, não como diferencial opcional. Cada máquina, peça ou serviço passa por critérios rigorosos de avaliação para garantir desempenho, durabilidade e segurança operacional.</p>
+                                <p>Qualidade, para nós, significa precisão nas medidas, materiais adequados, montagem correta e testes antes da entrega. Não é apenas fazer funcionar — é fazer funcionar bem e de forma consistente ao longo do tempo.</p>
+                                <p>Mantemos padrão elevado porque entendemos o impacto direto no processo produtivo do cliente. Menos falhas, menos retrabalho, mais eficiência. Esse é o nível de qualidade que a SAM Máquinas entrega.</p>
+                            </div>
+                            <div class="swiper-slide" style="font-family: 'REM', sans-serif">
+                                <h2>Tecnologia</h2>
+                                <p>A SAM Máquinas usa tecnologia como ferramenta para gerar resultado real no chão de fábrica. Investimos em equipamentos atualizados, processos automatizados e soluções digitais que aumentam precisão, repetibilidade e velocidade de produção.</p>
+                                <p>Tecnologia, para nós, é integrar software, controle eletrônico e mecânica de forma eficiente. Aplicamos sistemas de monitoramento, melhorias em corte e solda, ajustes finos em calibração e métodos modernos de manutenção para reduzir falhas e custos.</p>
+                                <p>O objetivo é claro: máquinas mais confiáveis, processos mais rápidos e clientes mais produtivos. Tecnologia só faz sentido quando melhora o resultado final — e é nisso que a SAM Máquinas trabalha.</p>
+                            </div>
+                            <div class="swiper-slide" style="font-family: 'REM', sans-serif">
+                                <h2>Atendimento</h2>
+                                <p>O atendimento da SAM Máquinas é direto e eficiente. Escutamos a necessidade, analisamos o problema com critério técnico e respondemos com solução clara, sem enrolação.</p>
+                                <p>Priorizamos agilidade no retorno, comunicação transparente sobre prazos e custos, e suporte contínuo após a entrega. Quando surge imprevisto, tratamos rápido para não parar a produção do cliente.</p>
+                                <p>Atender bem, para a SAM Máquinas, é resolver de verdade — com respeito, responsabilidade e foco no resultado.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4" id="first-row">
+                <div class="col-4"></div>
                 <div class="col">
                     <div class="row">
                         <i class="fa-solid fa-check"></i> +30 anos de experiência no mercado.
@@ -206,7 +339,8 @@
                         <i class="fa-solid fa-check"></i> Atendimento personalizado.
                     </div>
                     <div class="row">
-                        <i class="fa-solid fa-check"></i> Conexão direta com fabricantes internacionais, sem intermediários.
+                        <i class="fa-solid fa-check"></i> Conexão direta com fabricantes internacionais, sem
+                        intermediários.
                     </div>
                     <div class="row">
                         <i class="fa-solid fa-check"></i> Processo de importação seguro e transparente.
@@ -375,4 +509,17 @@
         crossorigin="anonymous"></script>
     <!-- My JS -->
     <script src="../../assets/main.js"></script>
+    <script>
+        var chooseSwiper = new Swiper('.choose-swiper', {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 7500
+            }
+        })
+    </script>
 </body>
