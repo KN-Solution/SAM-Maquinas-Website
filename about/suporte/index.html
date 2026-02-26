@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/imgs/favicon.png" type="image/x-icon">
+    <meta property="og:title" content="SAM Máquinas">
+    <meta property="og:description"
+        content="A SAM Importação de Máquinas LTDA é uma empresa especializada na importação e comercialização de máquinas industriais de alta performance, atendendo os setores metalúrgico, agrícola, têxtil entre outros. Com sede em Brusque/SC, a empresa atua conectando fabricantes internacionais a empresas nacionais, oferecendo soluções eficientes e tecnológicas para otimização de processos produtivos.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/KN-Solution/SAM-Maquinas-Website/refs/heads/develop/assets/imgs/logo.jpg">
+    <meta property="og:url" content="https://sammaquinas.com.br">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MVQGBHSQ');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Bootstrap 5.2 CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome icons 6.2 (free version)-->
+    <script src='https://use.fontawesome.com/releases/v6.2.0/js/all.js' crossorigin='anonymous'></script>
+    <!-- Swiper Slide-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../../assets/main.css">
+    <title>SAM Máquinas</title>
+    <style>
+        /* ===== SOBRE NÓS RESPONSIVO ===== */
+
+        /* Ajuste geral da seção */
+        .container .row {
+            align-items: flex-start;
+        }
+
+        /* Ajusta o embed que está deslocado */
+        .container blockquote.instagram-media {
+            /* transform: none !important; */
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        #main-header a {
+            color: black !important;
+        }
+
+        main {
+            padding-top: 75px;
+        }
+
+        main .row.p-5 {
+            width: fit-content;
+        }
+
+
+        /* ===== TABLET ===== */
+        @media (max-width: 992px) {
+
+            .container .col-7,
+            .container .col-5 {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+
+            .container .col-5 {
+                padding-left: 0 !important;
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .container p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .container .instagram-media {
+                transform: none !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 768px) {
+
+            .row.p-5 {
+                padding: 40px 20px !important;
+            }
+
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .container p {
+                font-size: 15px;
+                text-align: left;
+            }
+
+            .container .col-5 {
+                margin-top: 30px;
+            }
+        }
+
+
+        /* ===== MOBILE PEQUENO ===== */
+        @media (max-width: 480px) {
+
+            .row.p-5 {
+                padding: 30px 20px !important;
+                width: fit-content;
+            }
+
+            .container p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="main-header" class="row">
+            <div class="col" id="logo" onclick="location.href='/'">
+                <img src="../../assets/imgs/logo.png" alt="">
+            </div>
+            <div class="col-1">
+                <a href="/#main">Ínicio</a>
+            </div>
+            <div class="col-1">
+                <a href="/#products">Máquinas</a>
+            </div>
+            <div class="col-1">
+                <a href="/#about">Empresa</a>
+            </div>
+            <div class="col-1">
+                <a href="/#contact">Contato</a>
+            </div>
+            <div id="last-col" class="col-2">
+                <a href="https://wa.me/5547991707509" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>&nbsp;
+                    47 99170-7509
+                </a>
+            </div>
+            <div id="burguer-menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div id="list-menu">
+            <div class="row mt-3">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </div>
+            <div class="row" onclick="closeMenu()">
+                <a href="#products">Máquinas</a>
+            </div>
+            <div class="row" onclick="closeMenu()">
+                <a href="#about">Empresa</a>
+            </div>
+            <div class="row" onclick="closeMenu()">
+                <a href="#contact">Contato</a>
+            </div>
+            <div id="whatsapp-contact" class="col-2">
+                <a href="https://wa.me/5547991707509" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>&nbsp;
+                    47 99170-7509
+                </a>
+            </div>
+        </div>
+
+        <div class="row p-5">
+            <h1>Suporte</h1>
+        </div>
+
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col">
+                    <p>Na SAM, o suporte ao cliente é parte central do nosso trabalho. Atuamos lado a lado com cada
+                        empresa
+                        desde o primeiro contato até o pós-venda, garantindo clareza, agilidade e segurança em todas as
+                        etapas
+                        do processo.</p>
+
+                    <p>Oferecemos acompanhamento técnico e comercial, auxiliando na escolha da máquina adequada, no
+                        alinhamento
+                        com o fabricante, na logística, na documentação e na entrega. Nosso time tem conhecimento
+                        prático do
+                        setor industrial e fala a mesma língua de quem está no chão de fábrica.</p>
+
+                    <p>O objetivo é simples: reduzir riscos, evitar surpresas e garantir que o cliente receba exatamente
+                        o que
+                        foi contratado. Para a SAM, suporte não é um diferencial opcional, é obrigação.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Seções</h5>
+                </div>
+                <div class="col">
+                    <h5>Máquinas</h5>
+                </div>
+                <div class="col footer-contact">
+                    <h5>Contato</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">Inicio</a>
+                </div>
+                <div class="col">
+                    <a href="">Solda a laser</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href="https://wa.me/5547991707509"><i class="fa-brands fa-whatsapp"></i> +55 (47) 99170-7509</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">Máquinas</a>
+                </div>
+                <div class="col">
+                    <a href="">Corte a laser</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href=""><i class="fa-solid fa-envelope"></i> contato@sammaquinas.com.br</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">Empresa</a>
+                </div>
+                <div class="col">
+                    <a href="">Prensa drobadeira</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href="/"><i class="fa-solid fa-globe"></i> www.sammaquinas.com.br</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">Contatos</a>
+                </div>
+                <div class="col">
+                    <a href="">Torno CNC</a>
+                </div>
+                <div class="col footer-contact">
+                    <a href="https://www.instagram.com/sam_maquinas/"><i class="fa-brands fa-instagram"></i>
+                        @sam_maquinas</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Centro de usinagem</a>
+                </div>
+                <div class="col footer-contact"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Guilhotina</a>
+                </div>
+                <div class="col footer-contact"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Curvadeira CNC</a>
+                </div>
+                <div class="col footer-contact"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Empilhadeira</a>
+                </div>
+                <div class="col footer-contact"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Calandra</a>
+                </div>
+                <div class="col footer-contact"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="">Peças de reposição</a>
+                </div>
+                <div class="col footer-contact"></div>
+            </div>
+            <div class="row mb-4" id="footer-contact-mobile">
+                <div class="col text-center">
+                    <h5>Contatos</h5>
+                </div>
+                <div class="row text-center">
+                    <a href="https://wa.me/5547991707509"><i class="fa-brands fa-whatsapp"></i> +55 (47) 99170-7509</a>
+                </div>
+                <div class="row text-center">
+                    <a href=""><i class="fa-solid fa-envelope"></i> contato@sammaquinas.com.br</a>
+                </div>
+                <div class="row text-center">
+                    <a href=""><i class="fa-solid fa-globe"></i> www.sammaquinas.com.br</a>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center" id="mobile-footer">
+            <p>© 2026 SAM Comércio de Máquinas LTDA. Todos os direitos reservados.</p>
+        </div>
+        <div class="col text-center">
+            Made by <a href="https://wa.me/5547992626735"><img src="../../assets/imgs/kn-mini.png" alt=""
+                    style="height: 20px;"> Solution</a>
+        </div>
+    </footer>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVQGBHSQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1427498425684128');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1427498425684128&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- GSAP-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- Bootstrap 5.2-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="../../assets/main.js"></script>
+</body>
