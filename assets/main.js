@@ -138,7 +138,7 @@ function animCursor(el, enter) {
         gsap.to(el, {
             duration: 0.5,
             x: -25,
-            y: -30,
+            y: -35,
             rotate: -25,
             onComplete: () => {
                 gsap.to(el, {
@@ -168,8 +168,8 @@ function animCursor(el, enter) {
     } else {
         gsap.to(el, {
             duration: 0.5,
-            x: 50,
-            y: 50,
+            x: 30,
+            y: 100,
             rotate: 0
         })
     }

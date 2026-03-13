@@ -322,7 +322,12 @@ main #about .row.mb-5.mt-5 {
 }
 
 main #about .col {
-    height: 75vh;
+    max-height: 200px;
+    height: 100%;
+    z-index: 1;
+    width: clamp(230px, 20vw, 400px);
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 main #about .col .menu-item {
@@ -354,14 +359,17 @@ main #about .col .row {
 .about-option {
     height: 200px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #3098cd;
     border-radius: 15px;
-    background-color: white;
+    background-color: transparent;
     color: #3098cd;
     flex-direction: column;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     overflow: hidden;
+    z-index: 9999;
 }
 
 .about-option h1 {
@@ -376,7 +384,7 @@ main #about .col .row {
 }
 
 .about-option .fa-arrow-pointer {
-    transform: translateX(50px) translateY(50px);
+    transform: translateX(50px) translateY(100px);
     width: 40px;
     height: 40px;
 }
