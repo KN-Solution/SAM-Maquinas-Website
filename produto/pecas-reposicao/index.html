@@ -73,12 +73,23 @@
             font-size: 20px;
         }
 
-        #description h1{
+        #description h1 {
             font-size: 7vw;
         }
 
-        #main-header a{
+        #main-header a {
             color: black !important;
+        }
+
+        .swiper {
+            width: 100%;
+            height: auto;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* ===== TABLET ===== */
@@ -96,7 +107,7 @@
                 font-size: 16px;
             }
 
-            #description h1{
+            #description h1 {
                 font-size: 8vw;
             }
         }
@@ -154,7 +165,7 @@
                 font-size: 14px;
             }
 
-            #description .col h1{
+            #description .col h1 {
                 font-size: 12vw;
             }
 
@@ -214,21 +225,27 @@
         </div>
 
         <div id="product-content" class="row m-5">
-            <div class="col" style="display: flex; justify-content: center;">
-                <img src="../../assets/imgs/mach-2.png" alt=""
-                    style="width: 90%; border-radius: 15px; box-shadow: 1px 2px 8px gray;">
+            <div class="col-6" style="display: flex; justify-content: center;">
+                <div class="swiper swiper-vitrine">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../assets/imgs/peca_rep_1.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../assets/imgs/peca_rep_2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
             <div class="col">
-                <h1>Máquina de Peças de Reposição</h1>
-                <!-- <h5>MÁQUINA DE CORTE A LASER DE USO DUPLO DE FIBRA & CO2</h5> -->
-                <ul>
-                    <!-- <li>
-                        <b>Modelo:</b> LF1325LC
-                    </li> -->
-                    <li>
-                        <b>Tensão e frequência:</b> 220V 50Hz
-                    </li>
-                </ul>
+                <h1>Peças de Reposição</h1>
+                <p>Contamos com as mais variadas peças de reposição para sua maquina de Corte Laser, Solda Laser, Prensa
+                Dobradeira.</p>
+                <p>A pronta entrega ou por encomenda via importação.
+                Entre em contato e econmize muito!</p>
                 <div class="row mt-5">
                     <div class="col text-center">
                         <div class="btn btn-primary" style="width: 70%; height: 8vh;">
@@ -242,11 +259,11 @@
             </div>
         </div>
 
-        <div class="row m-5" id="description">
+        <!-- <div class="row m-5" id="description">
             <div class="col text-center">
                 <h1 style="font-family: 'Dongle', sans-serif;">Descrição</h1>
             </div>
-        </div>
+        </div> -->
 
     </main>
 
@@ -407,6 +424,23 @@
         crossorigin="anonymous"></script>
     <!-- My JS -->
     <script src="../../assets/main.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-vitrine', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
 </body>
 
 </html>
