@@ -1,0 +1,7 @@
+{
+  "name": "SAM-Website",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
